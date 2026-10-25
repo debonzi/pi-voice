@@ -1,0 +1,96 @@
+whisper_init_from_file_with_params_no_state: loading model from '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/models/ggml-medium.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+Build with Macros:
+  GGML_SYCL_DNNL: yes
+  GGML_SYCL_F16: yes
+  GGML_SYCL_FORCE_MMQ: no
+  GGML_SYCL_GRAPH: no
+  GGML_SYCL_SUPPORT_LEVEL_ZERO_API: yes
+  GGML_SYCL_SUPPORT_VMM: yes
+Running with Environment Variables:
+  GGML_SYCL_DEBUG: 0
+  GGML_SYCL_DEV_DEBUG: 0
+  GGML_SYCL_DEV2DEV_MEMCPY: 0 (SYCL API)
+  GGML_SYCL_GET_MEM_API: 0 (Level Zero API)
+  GGML_SYCL_ENABLE_DNN: 1
+  GGML_SYCL_FA_ONEDNN: 1
+  GGML_SYCL_FA_ONEDNN_MAX_KV: 0
+  GGML_SYCL_ENABLE_MKL_FA: 1
+  GGML_SYCL_MEMTRACE: 0
+  GGML_SYCL_MEMTRACE_STEP: 64
+  GGML_SYCL_ENABLE_FLASH_ATTN: 1
+  GGML_SYCL_ENABLE_GRAPH: graph disabled by compile flag
+  GGML_SYCL_ENABLE_OPT: 1
+  GGML_SYCL_ENABLE_VMM: 1
+  GGML_SYCL_ENABLE_FUSION: 1
+  GGML_SYCL_ENABLE_ESIMD: 1
+  GGML_SYCL_MMVQ_WIDE: 1
+  GGML_SYCL_PRIORITIZE_DMMV: 0
+  GGML_SYCL_USE_ASYNC_MEM_OP: 1
+  GGML_SYCL_USE_LEVEL_ZERO_API: 1
+  GGML_SYCL_USM_SYSTEM: 0
+  GGML_SYCL_ENABLE_HOST_PINNED_MEM: 1
+  GGML_SYCL_HOST_PINNED_MEM_2G: 0
+  GGML_SYCL_SPARSE_FA: 0
+  GGML_SYCL_SPARSE_FA_DEBUG: 0
+  GGML_SYCL_SPARSE_FA_MARGIN: 256
+Found 1 SYCL devices:
+|  |                   |                                       |       |Max    |        |Max  |Global |                     |
+|  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
+|ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
+|--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
+| 0| [level_zero:gpu:0]|                     Intel Arc Graphics|  12.71|    128|    1024|   32| 30613M|          1.6.35096+9|
+SYCL Optimization Feature:
+|ID|        Device Type|Reorder|
+|--|-------------------|-------|
+| 0| [level_zero:gpu:0]|      Y|
+whisper_init_with_params_no_state: devices    = 2
+whisper_init_with_params_no_state: backends   = 2
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1024
+whisper_model_load: n_audio_head  = 16
+whisper_model_load: n_audio_layer = 24
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1024
+whisper_model_load: n_text_head   = 16
+whisper_model_load: n_text_layer  = 24
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 4 (medium)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:        SYCL0 total size =  1533.14 MB
+whisper_model_load: model size    = 1533.14 MB
+whisper_backend_init_gpu: device 0: SYCL0 (type: 2)
+whisper_backend_init_gpu: found GPU device 0: SYCL0 (type: 2, cnt: 0)
+whisper_backend_init_gpu: using SYCL0 backend
+whisper_init_state: kv self size  =   50.33 MB
+whisper_init_state: kv cross size =  150.99 MB
+whisper_init_state: kv pad  size  =    6.29 MB
+whisper_init_state: compute buffer (conv)   =   29.53 MB
+whisper_init_state: compute buffer (encode) =   44.60 MB
+whisper_init_state: compute buffer (cross)  =    7.73 MB
+whisper_init_state: compute buffer (decode) =   99.12 MB
+read_audio_data: reading audio data from '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/recordings/prompt-002.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 8 / 22 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/recordings/prompt-002.wav' (610274 samples, 38.1 sec), 8 threads, 1 processors, 5 beams + best of 5, lang = pt, task = transcribe, timestamps = 0 ...
+
+
+whisper_print_timings:     load time =  1150.24 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =    16.79 ms
+whisper_print_timings:   sample time =   148.41 ms /   281 runs (     0.53 ms per run)
+whisper_print_timings:   encode time = 31427.85 ms /     2 runs ( 15713.93 ms per run)
+whisper_print_timings:   decode time = 15657.09 ms /     2 runs (  7828.54 ms per run)
+whisper_print_timings:   batchd time =  9557.68 ms /   273 runs (    35.01 ms per run)
+whisper_print_timings:   prompt time =   202.65 ms /    75 runs (     2.70 ms per run)
+whisper_print_timings:    total time = 58328.65 ms

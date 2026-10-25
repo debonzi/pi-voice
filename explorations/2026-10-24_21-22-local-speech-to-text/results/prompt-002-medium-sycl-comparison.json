@@ -1,0 +1,82 @@
+{
+  "configuration": {
+    "version": "1.9.5",
+    "compiler": "2025.3.2",
+    "model": "medium",
+    "recording": "prompt-002.wav",
+    "audioDurationSeconds": 38.142125,
+    "audioSha256": "3796a4c7194ef98f05de7a3e8949ba8345963a50dbaa7b40c00fef3f8b23ae73",
+    "language": "pt",
+    "threads": 8,
+    "beamSize": 5,
+    "initialPrompt": null,
+    "flashAttentionRequested": true,
+    "optionalFP16Gemm": false,
+    "oneDNN": false,
+    "SYCLGraphs": false,
+    "levelZeroDirectAPI": true,
+    "isolatedLoader": "1.24.1",
+    "syclCachePersistent": 0,
+    "separateProcessPerRun": true,
+    "includesModelLoading": true
+  },
+  "failedPersistentCacheAttempt": {
+    "signal": 11,
+    "shellExitStatus": 139,
+    "transcriptProduced": false,
+    "wallSecondsBeforeFailure": 2.58,
+    "excludedFromBenchmarks": true,
+    "backtrace": "PersistentDeviceCodeCache::getItemFromDisc -> getSortedImages -> strcmp",
+    "diagnosticReproductionAlsoFailed": true
+  },
+  "firstSuccessfulInvocation": {
+    "stem": "prompt-002-medium-sycl-no-persistent-cache-first",
+    "wallSeconds": 61.17,
+    "maxRssKiB": 744464,
+    "encodeSeconds": 30.599439999999998,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+  },
+  "subsequentRuns": [
+    {
+      "stem": "prompt-002-medium-sycl-no-persistent-cache-run-1",
+      "wallSeconds": 31.29,
+      "maxRssKiB": 644804,
+      "encodeSeconds": 17.82412,
+      "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+    },
+    {
+      "stem": "prompt-002-medium-sycl-no-persistent-cache-run-2",
+      "wallSeconds": 33.32,
+      "maxRssKiB": 646424,
+      "encodeSeconds": 19.570580000000003,
+      "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+    },
+    {
+      "stem": "prompt-002-medium-sycl-no-persistent-cache-run-3",
+      "wallSeconds": 34.78,
+      "maxRssKiB": 631796,
+      "encodeSeconds": 19.57943,
+      "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+    }
+  ],
+  "medianWallSeconds": 33.32,
+  "medianEncodeSeconds": 19.570580000000003,
+  "minWallSeconds": 31.29,
+  "maxWallSeconds": 34.78,
+  "transcriptStable": true,
+  "differsFromHistoricalCpuOnlyByPromptDoPiToPai": true,
+  "historicalReferencesNotRerun": {
+    "cpuMedianSeconds": 36.33,
+    "vulkanMedianSeconds": 9.77,
+    "cpuTranscript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pi. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?",
+    "vulkanTranscript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo que eu estou falando e transcrever para o prompt do pai o enter não deve ser pressionado automaticamente o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente e sim submeter o modelo você consegue entender tudo isso que eu estou falando"
+  },
+  "limitations": [
+    "No contemporaneous CPU or Vulkan controls in this round.",
+    "No thermal/load/power control.",
+    "No independently established complete verbatim reference.",
+    "Optional FP16 GEMM, oneDNN and graphs disabled; this is not a fully optimized SYCL performance comparison.",
+    "Persistent SYCL cache disabled as a process-local workaround; driver caches were not manually cleared.",
+    "First successful invocation retained separately; no separate JIT-only measurement."
+  ]
+}

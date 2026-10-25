@@ -1,0 +1,22 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+INFO: Output filtered by ONEAPI_DEVICE_SELECTOR environment variable, which is set to level_zero:gpu.
+To see device ids, use the --ignore-device-selectors CLI option.
+
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000073e1bbacc9fa in zelLoaderTracingLayerInit () from /lib/x86_64-linux-gnu/libze_loader.so.1
+
+Thread 1 (Thread 0x73e1bc411c80 (LWP 1104955) "sycl-ls"):
+#0  0x000073e1bbacc9fa in zelLoaderTracingLayerInit () from /lib/x86_64-linux-gnu/libze_loader.so.1
+#1  0x000073e1ba9d4341 in ze_lib::context_t::Init(unsigned int, bool, _ze_init_driver_type_desc_t*) () from /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+#2  0x000073e1ba9ca90d in std::call_once<zeInit::$_0>(std::once_flag&, zeInit::$_0&&)::{lambda()#2}::__invoke() () from /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+#3  0x000073e1bb8a1fb3 in __pthread_once_slow (once_control=0x581107e425f8, init_routine=0x73e1bbceb420 <__once_proxy>) at ./nptl/pthread_once.c:116
+#4  0x000073e1ba9c118f in zeInit () from /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+#5  0x000073e1ba87edf3 in ur_adapter_handle_t_::ur_adapter_handle_t_() () from /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+#6  0x000073e1ba8802a2 in ur::level_zero::urAdapterGet(unsigned int, ur_adapter_handle_t_**, unsigned int*) () from /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+#7  0x000073e1baf1bf09 in ur_loader::urAdapterGet(unsigned int, ur_adapter_handle_t_**, unsigned int*) () from /opt/intel/oneapi/compiler/2025.3/lib/libur_loader.so.0
+#8  0x000073e1baf20f9a in urAdapterGet () from /opt/intel/oneapi/compiler/2025.3/lib/libur_loader.so.0
+#9  0x000073e1bc326693 in sycl::_V1::detail::ur::initializeUr(ur_loader_config_handle_t_*) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#10 0x000073e1bc26d50a in sycl::_V1::detail::platform_impl::get_platforms() () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#11 0x000073e1bc38cd5d in sycl::_V1::platform::get_platforms() () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8

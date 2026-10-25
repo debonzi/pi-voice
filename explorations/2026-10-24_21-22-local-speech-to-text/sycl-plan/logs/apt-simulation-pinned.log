@@ -1,0 +1,154 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libfwupd2 libslirp0 linux-hwe-7.0-tools-7.0.0-34
+  linux-modules-ipu6-7.0.0-34-generic linux-tools-7.0.0-34-generic slirp4netns
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  intel-oneapi-common-licensing-2025.3 intel-oneapi-common-oneapi-vars-2025.3
+  intel-oneapi-common-vars intel-oneapi-compiler-cpp-eclipse-cfg-2025.3
+  intel-oneapi-compiler-dpcpp-cpp-common-2025.3
+  intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3
+  intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3
+  intel-oneapi-compiler-shared-2025.3
+  intel-oneapi-compiler-shared-common-2025.3
+  intel-oneapi-compiler-shared-runtime-2025.3
+  intel-oneapi-dev-utilities-2025.3
+  intel-oneapi-dev-utilities-eclipse-cfg-2025.3 intel-oneapi-dpcpp-cpp-2025.3
+  intel-oneapi-dpcpp-debugger-2025.3
+  intel-oneapi-icc-eclipse-plugin-cpp-2025.3
+  intel-oneapi-libdpstd-devel-2022.10 intel-oneapi-mkl-classic-include-2025.3
+  intel-oneapi-mkl-core-2025.3 intel-oneapi-mkl-core-devel-2025.3
+  intel-oneapi-mkl-sycl-2025.3 intel-oneapi-mkl-sycl-blas-2025.3
+  intel-oneapi-mkl-sycl-data-fitting-2025.3 intel-oneapi-mkl-sycl-dft-2025.3
+  intel-oneapi-mkl-sycl-include-2025.3 intel-oneapi-mkl-sycl-lapack-2025.3
+  intel-oneapi-mkl-sycl-rng-2025.3 intel-oneapi-mkl-sycl-sparse-2025.3
+  intel-oneapi-mkl-sycl-stats-2025.3 intel-oneapi-mkl-sycl-vm-2025.3
+  intel-oneapi-openmp-2025.3 intel-oneapi-openmp-common-2025.3
+  intel-oneapi-tbb-2022.3 intel-oneapi-tcm-1.4 intel-oneapi-umf-1.0
+The following NEW packages will be installed:
+  clinfo intel-igc-core-2 intel-igc-opencl-2
+  intel-oneapi-common-licensing-2025.3 intel-oneapi-common-oneapi-vars-2025.3
+  intel-oneapi-common-vars intel-oneapi-compiler-cpp-eclipse-cfg-2025.3
+  intel-oneapi-compiler-dpcpp-cpp-2025.3
+  intel-oneapi-compiler-dpcpp-cpp-common-2025.3
+  intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3
+  intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3
+  intel-oneapi-compiler-shared-2025.3
+  intel-oneapi-compiler-shared-common-2025.3
+  intel-oneapi-compiler-shared-runtime-2025.3
+  intel-oneapi-dev-utilities-2025.3
+  intel-oneapi-dev-utilities-eclipse-cfg-2025.3 intel-oneapi-dpcpp-cpp-2025.3
+  intel-oneapi-dpcpp-debugger-2025.3
+  intel-oneapi-icc-eclipse-plugin-cpp-2025.3
+  intel-oneapi-libdpstd-devel-2022.10 intel-oneapi-mkl-classic-include-2025.3
+  intel-oneapi-mkl-core-2025.3 intel-oneapi-mkl-core-devel-2025.3
+  intel-oneapi-mkl-sycl-2025.3 intel-oneapi-mkl-sycl-blas-2025.3
+  intel-oneapi-mkl-sycl-data-fitting-2025.3 intel-oneapi-mkl-sycl-devel-2025.3
+  intel-oneapi-mkl-sycl-dft-2025.3 intel-oneapi-mkl-sycl-include-2025.3
+  intel-oneapi-mkl-sycl-lapack-2025.3 intel-oneapi-mkl-sycl-rng-2025.3
+  intel-oneapi-mkl-sycl-sparse-2025.3 intel-oneapi-mkl-sycl-stats-2025.3
+  intel-oneapi-mkl-sycl-vm-2025.3 intel-oneapi-openmp-2025.3
+  intel-oneapi-openmp-common-2025.3 intel-oneapi-tbb-2022.3
+  intel-oneapi-tbb-devel-2022.3 intel-oneapi-tcm-1.4 intel-oneapi-umf-1.0
+  intel-opencl-icd libze-dev libze-intel-gpu1 libze1
+The following packages will be upgraded:
+  libigdgmm12
+1 upgraded, 44 newly installed, 0 to remove and 42 not upgraded.
+Inst clinfo (3.0.23.01.25-1build1 Ubuntu:24.04/noble [amd64])
+Inst intel-igc-core-2 (2.18.5 local-deb [amd64])
+Inst intel-igc-opencl-2 (2.18.5 local-deb [amd64])
+Inst intel-oneapi-common-licensing-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-common-oneapi-vars-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-common-vars (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-compiler-cpp-eclipse-cfg-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-icc-eclipse-plugin-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-compiler-dpcpp-cpp-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-openmp-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-tcm-1.4 (1.4.1-445 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-umf-1.0 (1.0.3-17 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-openmp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-compiler-shared-runtime-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-tbb-2022.3 (2022.3.1-400 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-compiler-shared-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-dpcpp-debugger-2025.3 (2025.3.1-7 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-compiler-shared-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-tbb-devel-2022.3 (2022.3.1-400 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-dev-utilities-eclipse-cfg-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Inst intel-oneapi-dev-utilities-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-dpcpp-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-libdpstd-devel-2022.10 (2022.10.0-275 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-compiler-dpcpp-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-classic-include-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-core-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-core-devel-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-blas-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-lapack-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-dft-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-sparse-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-vm-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-rng-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-stats-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-data-fitting-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-include-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst intel-oneapi-mkl-sycl-devel-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Inst libigdgmm12 [22.3.17+ds1-1ubuntu1] (22.8.1 local-deb [amd64])
+Inst intel-opencl-icd (25.35.35096.9-0 local-deb [amd64])
+Inst libze1 (1.16.1-1build1 Ubuntu:24.04/noble [amd64])
+Inst libze-dev (1.16.1-1build1 Ubuntu:24.04/noble [amd64])
+Inst libze-intel-gpu1 (25.35.35096.9-0 local-deb [amd64])
+Conf clinfo (3.0.23.01.25-1build1 Ubuntu:24.04/noble [amd64])
+Conf intel-igc-core-2 (2.18.5 local-deb [amd64])
+Conf intel-igc-opencl-2 (2.18.5 local-deb [amd64])
+Conf intel-oneapi-common-licensing-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-common-oneapi-vars-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-common-vars (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-compiler-cpp-eclipse-cfg-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-icc-eclipse-plugin-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-compiler-dpcpp-cpp-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-openmp-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-tcm-1.4 (1.4.1-445 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-umf-1.0 (1.0.3-17 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-openmp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-compiler-shared-runtime-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-tbb-2022.3 (2022.3.1-400 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-compiler-shared-common-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-dpcpp-debugger-2025.3 (2025.3.1-7 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-compiler-shared-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-tbb-devel-2022.3 (2022.3.1-400 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-dev-utilities-eclipse-cfg-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [all])
+Conf intel-oneapi-dev-utilities-2025.3 (2025.3.1-15 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-dpcpp-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-libdpstd-devel-2022.10 (2022.10.0-275 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-compiler-dpcpp-cpp-2025.3 (2025.3.2-832 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-classic-include-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-core-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-core-devel-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-blas-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-lapack-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-dft-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-sparse-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-vm-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-rng-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-stats-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-data-fitting-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-include-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf intel-oneapi-mkl-sycl-devel-2025.3 (2025.3.1-8 Intel oneAPI Debian Repo:all [amd64])
+Conf libigdgmm12 (22.8.1 local-deb [amd64])
+Conf intel-opencl-icd (25.35.35096.9-0 local-deb [amd64])
+Conf libze1 (1.16.1-1build1 Ubuntu:24.04/noble [amd64])
+Conf libze-dev (1.16.1-1build1 Ubuntu:24.04/noble [amd64])
+Conf libze-intel-gpu1 (25.35.35096.9-0 local-deb [amd64])
+W: Unable to read /etc/apt/-/ - DirectoryExists (2: No such file or directory)
+W: Unable to read /etc/apt/-/ - DirectoryExists (2: No such file or directory)

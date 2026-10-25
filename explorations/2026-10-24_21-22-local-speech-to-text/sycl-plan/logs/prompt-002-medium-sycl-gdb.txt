@@ -1,0 +1,127 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+whisper_init_from_file_with_params_no_state: loading model from '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/models/ggml-medium.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+Build with Macros:
+  GGML_SYCL_DNNL: yes
+  GGML_SYCL_F16: no
+  GGML_SYCL_FORCE_MMQ: no
+  GGML_SYCL_GRAPH: no
+  GGML_SYCL_SUPPORT_LEVEL_ZERO_API: yes
+  GGML_SYCL_SUPPORT_VMM: yes
+Running with Environment Variables:
+  GGML_SYCL_DEBUG: 0
+  GGML_SYCL_DEV_DEBUG: 0
+  GGML_SYCL_DEV2DEV_MEMCPY: 0 (SYCL API)
+  GGML_SYCL_GET_MEM_API: 0 (Level Zero API)
+  GGML_SYCL_ENABLE_DNN: 1
+  GGML_SYCL_FA_ONEDNN: 1
+  GGML_SYCL_FA_ONEDNN_MAX_KV: 0
+  GGML_SYCL_ENABLE_MKL_FA: 1
+  GGML_SYCL_MEMTRACE: 0
+  GGML_SYCL_MEMTRACE_STEP: 64
+  GGML_SYCL_ENABLE_FLASH_ATTN: 1
+  GGML_SYCL_ENABLE_GRAPH: graph disabled by compile flag
+  GGML_SYCL_ENABLE_OPT: 1
+  GGML_SYCL_ENABLE_VMM: 1
+  GGML_SYCL_ENABLE_FUSION: 1
+  GGML_SYCL_ENABLE_ESIMD: 1
+  GGML_SYCL_MMVQ_WIDE: 1
+  GGML_SYCL_PRIORITIZE_DMMV: 0
+  GGML_SYCL_USE_ASYNC_MEM_OP: 1
+  GGML_SYCL_USE_LEVEL_ZERO_API: 1
+  GGML_SYCL_USM_SYSTEM: 0
+  GGML_SYCL_ENABLE_HOST_PINNED_MEM: 1
+  GGML_SYCL_HOST_PINNED_MEM_2G: 0
+  GGML_SYCL_SPARSE_FA: 0
+  GGML_SYCL_SPARSE_FA_DEBUG: 0
+  GGML_SYCL_SPARSE_FA_MARGIN: 256
+[New Thread 0x76dd091ff6c0 (LWP 1119058)]
+Found 1 SYCL devices:
+|  |                   |                                       |       |Max    |        |Max  |Global |                     |
+|  |                   |                                       |       |compute|Max work|sub  |mem    |                     |
+|ID|        Device Type|                                   Name|Version|units  |group   |group|size   |       Driver version|
+|--|-------------------|---------------------------------------|-------|-------|--------|-----|-------|---------------------|
+| 0| [level_zero:gpu:0]|                     Intel Arc Graphics|  12.71|    128|    1024|   32| 30613M|          1.6.35096+9|
+SYCL Optimization Feature:
+|ID|        Device Type|Reorder|
+|--|-------------------|-------|
+| 0| [level_zero:gpu:0]|      Y|
+whisper_init_with_params_no_state: devices    = 2
+whisper_init_with_params_no_state: backends   = 2
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1024
+whisper_model_load: n_audio_head  = 16
+whisper_model_load: n_audio_layer = 24
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1024
+whisper_model_load: n_text_head   = 16
+whisper_model_load: n_text_layer  = 24
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 4 (medium)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:        SYCL0 total size =  1533.14 MB
+whisper_model_load: model size    = 1533.14 MB
+whisper_backend_init_gpu: device 0: SYCL0 (type: 2)
+whisper_backend_init_gpu: found GPU device 0: SYCL0 (type: 2, cnt: 0)
+whisper_backend_init_gpu: using SYCL0 backend
+whisper_init_state: kv self size  =   50.33 MB
+whisper_init_state: kv cross size =  150.99 MB
+whisper_init_state: kv pad  size  =    6.29 MB
+whisper_init_state: compute buffer (conv)   =   29.53 MB
+whisper_init_state: compute buffer (encode) =   44.60 MB
+whisper_init_state: compute buffer (cross)  =    7.73 MB
+whisper_init_state: compute buffer (decode) =   99.12 MB
+read_audio_data: reading audio data from '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/recordings/prompt-002.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 8 / 22 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | OPENMP = 1 | REPACK = 1 | 
+
+main: processing '/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/recordings/prompt-002.wav' (610274 samples, 38.1 sec), 8 threads, 1 processors, 5 beams + best of 5, lang = pt, task = transcribe, timestamps = 0 ...
+
+[New Thread 0x76dd089fe6c0 (LWP 1119061)]
+[New Thread 0x76dce4db86c0 (LWP 1119062)]
+[New Thread 0x76dcdffff6c0 (LWP 1119063)]
+[New Thread 0x76dcdf7fe6c0 (LWP 1119064)]
+[New Thread 0x76dcdeffd6c0 (LWP 1119065)]
+[New Thread 0x76dcde7fc6c0 (LWP 1119066)]
+[New Thread 0x76dcddffb6c0 (LWP 1119067)]
+[Thread 0x76dcddffb6c0 (LWP 1119067) exited]
+[Thread 0x76dcde7fc6c0 (LWP 1119066) exited]
+[Thread 0x76dcdf7fe6c0 (LWP 1119064) exited]
+[Thread 0x76dd089fe6c0 (LWP 1119061) exited]
+[Thread 0x76dce4db86c0 (LWP 1119062) exited]
+[Thread 0x76dcdffff6c0 (LWP 1119063) exited]
+[Thread 0x76dcdeffd6c0 (LWP 1119065) exited]
+
+Thread 1 "whisper-cli" received signal SIGSEGV, Segmentation fault.
+__strcmp_avx2 () at ../sysdeps/x86_64/multiarch/strcmp-avx2.S:283
+warning: 283	../sysdeps/x86_64/multiarch/strcmp-avx2.S: No such file or directory
+#0  __strcmp_avx2 () at ../sysdeps/x86_64/multiarch/strcmp-avx2.S:283
+#1  0x000076dd1bad26f7 in sycl::_V1::detail::getSortedImages(std::vector<sycl::_V1::detail::RTDeviceBinaryImage const*, std::allocator<sycl::_V1::detail::RTDeviceBinaryImage const*> > const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#2  0x000076dd1bad7284 in sycl::_V1::detail::PersistentDeviceCodeCache::getItemFromDisc(sycl::_V1::detail::devices_range, std::vector<sycl::_V1::detail::RTDeviceBinaryImage const*, std::allocator<sycl::_V1::detail::RTDeviceBinaryImage const*> > const&, std::vector<unsigned char, std::allocator<unsigned char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#3  0x000076dd1ba73023 in sycl::_V1::detail::ProgramManager::getOrCreateURProgram(sycl::_V1::detail::RTDeviceBinaryImage const&, std::vector<sycl::_V1::detail::RTDeviceBinaryImage const*, std::allocator<sycl::_V1::detail::RTDeviceBinaryImage const*> > const&, sycl::_V1::detail::context_impl&, sycl::_V1::detail::devices_range, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<unsigned char, std::allocator<unsigned char> >) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#4  0x000076dd1ba7c203 in sycl::_V1::detail::ProgramManager::getBuiltURProgram(sycl::_V1::detail::ObjectWithDeps<sycl::_V1::detail::RTDeviceBinaryImage const*> const&, sycl::_V1::detail::context_impl&, sycl::_V1::detail::devices_range, sycl::_V1::detail::ObjectWithDeps<sycl::_V1::detail::device_image_plain> const*, std::vector<unsigned char, std::allocator<unsigned char> > const&)::$_2::operator()() const () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#5  0x000076dd1ba7aff5 in sycl::_V1::detail::ProgramManager::getBuiltURProgram(sycl::_V1::detail::ObjectWithDeps<sycl::_V1::detail::RTDeviceBinaryImage const*> const&, sycl::_V1::detail::context_impl&, sycl::_V1::detail::devices_range, sycl::_V1::detail::ObjectWithDeps<sycl::_V1::detail::device_image_plain> const*, std::vector<unsigned char, std::allocator<unsigned char> > const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#6  0x000076dd1ba76203 in sycl::_V1::detail::ProgramManager::getBuiltURProgram(sycl::_V1::detail::context_impl&, sycl::_V1::detail::device_impl&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#7  0x000076dd1ba7d8f8 in sycl::_V1::detail::ProgramManager::getOrCreateKernel(sycl::_V1::detail::context_impl&, sycl::_V1::detail::device_impl&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::KernelNameBasedCacheT*, sycl::_V1::detail::NDRDescT const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#8  0x000076dd1bafe688 in sycl::_V1::detail::enqueueImpKernel(sycl::_V1::detail::queue_impl&, sycl::_V1::detail::NDRDescT&, std::vector<sycl::_V1::detail::ArgDesc, std::allocator<sycl::_V1::detail::ArgDesc> >&, sycl::_V1::detail::kernel_bundle_impl*, sycl::_V1::detail::kernel_impl const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::KernelNameBasedCacheT*, std::vector<ur_event_handle_t_*, std::allocator<ur_event_handle_t_*> >&, sycl::_V1::detail::event_impl*, std::function<void* (sycl::_V1::detail::AccessorImplHost*)> const&, ur_kernel_cache_config_t, bool, bool, unsigned long, sycl::_V1::detail::RTDeviceBinaryImage const*, void*, int, sycl::_V1::detail::kernel_param_desc_t (*)(int), bool) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#9  0x000076dd1bb5459f in sycl::_V1::handler::finalize()::$_0::operator()() const::{lambda()#1}::operator()() const () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#10 0x000076dd1bb42933 in sycl::_V1::handler::finalize()::$_0::operator()() const () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#11 0x000076dd1bb3f0f7 in sycl::_V1::handler::finalize() () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#12 0x000076dd1bac4486 in std::shared_ptr<sycl::_V1::detail::event_impl> sycl::_V1::detail::queue_impl::finalizeHandlerInOrderNoEventsUnlocked<sycl::_V1::handler>(sycl::_V1::handler&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#13 0x000076dd1bac3609 in sycl::_V1::detail::queue_impl::submit_impl(sycl::_V1::detail::type_erased_cgfo_ty const&, sycl::_V1::detail::queue_impl*, bool, sycl::_V1::detail::code_location const&, bool, sycl::_V1::detail::v1::SubmissionInfo const&) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#14 0x000076dd1bac9062 in sycl::_V1::detail::queue_impl::submit_with_event(sycl::_V1::detail::type_erased_cgfo_ty const&, sycl::_V1::detail::v1::SubmissionInfo const&, sycl::_V1::detail::code_location const&, bool) () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#15 0x000076dd1bb919a4 in sycl::_V1::queue::submit_with_event_impl(sycl::_V1::detail::type_erased_cgfo_ty const&, sycl::_V1::detail::v1::SubmissionInfo const&, sycl::_V1::detail::code_location const&, bool) const () from /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+#16 0x000000000078b14d in sycl::_V1::event sycl::_V1::queue::submit_with_event<false, sycl::_V1::ext::oneapi::experimental::properties<sycl::_V1::ext::oneapi::experimental::detail::properties_type_list<> > >(sycl::_V1::ext::oneapi::experimental::properties<sycl::_V1::ext::oneapi::experimental::detail::properties_type_list<> >, sycl::_V1::detail::type_erased_cgfo_ty const&, sycl::_V1::detail::code_location const&) const ()
+#17 0x00000000007f76dc in void convert_unary_sycl<sycl::_V1::detail::half_impl::half, float>(void const*, float*, long, sycl::_V1::queue*) ()
+#18 0x000000000078c4ee in ggml_sycl_op_mul_mat_sycl(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&) ()
+#19 0x0000000000766b9d in void ggml_sycl_op_mul_mat<no_quantize_q8_1>(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, void (*)(ggml_backend_sycl_context&, ggml_tensor const*, ggml_tensor const*, ggml_tensor*, char const*, float const*, char const*, float*, long, long, long, long, sycl::_V1::queue* const&)) ()

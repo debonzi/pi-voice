@@ -1,0 +1,4 @@
+Platform #0: Intel(R) OpenCL
+ `-- Device #0: Intel(R) Core(TM) Ultra 7 155H
+Platform #1: Intel(R) OpenCL Graphics
+ `-- Device #0: Intel(R) Arc(TM) Graphics

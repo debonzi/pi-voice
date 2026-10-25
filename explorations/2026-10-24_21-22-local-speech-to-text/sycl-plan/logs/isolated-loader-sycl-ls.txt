@@ -1,0 +1,1 @@
+[level_zero:gpu] Intel(R) oneAPI Unified Runtime over Level-Zero, Intel(R) Arc(TM) Graphics 12.71.4 [1.6.35096+9]

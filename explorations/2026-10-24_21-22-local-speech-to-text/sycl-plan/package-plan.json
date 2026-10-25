@@ -1,0 +1,475 @@
+{
+  "simulatedOnly": true,
+  "systemPackagesInstalled": false,
+  "componentVersions": {
+    "compiler": "2025.3.2-832",
+    "oneMKL": "2025.3.1-8",
+    "oneTBB": "2022.3.1-400",
+    "computeRuntime": "25.35.35096.9-0",
+    "IGC": "2.18.5",
+    "GMM": "22.8.1",
+    "levelZeroLoaderAndHeaders": "1.16.1-1build1"
+  },
+  "counts": {
+    "new": 44,
+    "upgraded": 1,
+    "removed": 0
+  },
+  "totalDownloadBytes": 1505452792,
+  "totalDownloadGiB": 1.4020621702075005,
+  "totalInstalledBytes": 6619016192,
+  "additionalInstalledBytes": 6618361856,
+  "additionalInstalledGiB": 6.163829803466797,
+  "packages": [
+    {
+      "name": "clinfo",
+      "previousVersion": null,
+      "version": "3.0.23.01.25-1build1",
+      "source": "Signed APT index",
+      "downloadBytes": 56966,
+      "installedBytes": 184320,
+      "sha256": "d1375897a30ba98eafdaba5a00715c1b3f9e5797174d04377e39828b69b10fc9",
+      "filename": "pool/universe/c/clinfo/clinfo_3.0.23.01.25-1build1_amd64.deb"
+    },
+    {
+      "name": "intel-igc-core-2",
+      "previousVersion": null,
+      "version": "2.18.5",
+      "source": "Intel GitHub release",
+      "downloadBytes": 35945038,
+      "installedBytes": 195511296,
+      "sha256": null,
+      "filename": "intel-igc-core-2_2.18.5+19820_amd64.deb"
+    },
+    {
+      "name": "intel-igc-opencl-2",
+      "previousVersion": null,
+      "version": "2.18.5",
+      "source": "Intel GitHub release",
+      "downloadBytes": 58312612,
+      "installedBytes": 143202304,
+      "sha256": null,
+      "filename": "intel-igc-opencl-2_2.18.5+19820_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-common-licensing-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-15",
+      "source": "Signed APT index",
+      "downloadBytes": 31142,
+      "installedBytes": 148480,
+      "sha256": "0e2fc0b8a52653654afb91d51082c6ef1e4ece11d19b21a0c8cf270264f8c4bf",
+      "filename": "pool/main/intel-oneapi-common-licensing-2025.3-2025.3.1-15_all.deb"
+    },
+    {
+      "name": "intel-oneapi-common-oneapi-vars-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-15",
+      "source": "Signed APT index",
+      "downloadBytes": 10634,
+      "installedBytes": 54272,
+      "sha256": "e24ba3131c1e2854e5c50b17d560412dd11a33394ea056008c33d13ad10f3053",
+      "filename": "pool/main/intel-oneapi-common-oneapi-vars-2025.3-2025.3.1-15_all.deb"
+    },
+    {
+      "name": "intel-oneapi-common-vars",
+      "previousVersion": null,
+      "version": "2025.3.1-15",
+      "source": "Signed APT index",
+      "downloadBytes": 12694,
+      "installedBytes": 59392,
+      "sha256": "b05d5131b93fa290146f7bfc10849062f6d4f7c86ae66ae5751f0de231cac3ab",
+      "filename": "pool/main/intel-oneapi-common-vars-2025.3.1-15_all.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-cpp-eclipse-cfg-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 3080,
+      "installedBytes": 46080,
+      "sha256": "59cc4efafe623f1b3652114201e7550f6628c0b25d7258b38c9ed1a4e3902916",
+      "filename": "pool/main/intel-oneapi-compiler-cpp-eclipse-cfg-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 2764,
+      "installedBytes": 46080,
+      "sha256": "5b5daeccb68f8b0bcb45ccd95b2ececf5bc5366758bcbc5743a74f64d01da52b",
+      "filename": "pool/main/intel-oneapi-compiler-dpcpp-eclipse-cfg-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-icc-eclipse-plugin-cpp-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 2356,
+      "installedBytes": 0,
+      "sha256": "735c73338bfbdc92afda3e26670ba0ff9f6ea771dcd53a4f72cf59c7cdf33e36",
+      "filename": "pool/main/intel-oneapi-icc-eclipse-plugin-cpp-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-dpcpp-cpp-common-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 1802672,
+      "installedBytes": 17251328,
+      "sha256": "864f9aa601dda75c25594f390f98b3637b0c5a81d2f7dea6612e10de831e7183",
+      "filename": "pool/main/intel-oneapi-compiler-dpcpp-cpp-common-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-openmp-common-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 16982,
+      "installedBytes": 138240,
+      "sha256": "10af13bb74bbe14ed986d15114fc00352c95c09f32da77c58f50302ef3d0215a",
+      "filename": "pool/main/intel-oneapi-openmp-common-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-tcm-1.4",
+      "previousVersion": null,
+      "version": "1.4.1-445",
+      "source": "Signed APT index",
+      "downloadBytes": 656764,
+      "installedBytes": 3642368,
+      "sha256": "8e2fd21ec71f9c9d41df2a23d23ea8aad7d2928ae0f66ed3de4b54dbd7b5ce78",
+      "filename": "pool/main/intel-oneapi-tcm-1.4-1.4.1-445_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-umf-1.0",
+      "previousVersion": null,
+      "version": "1.0.3-17",
+      "source": "Signed APT index",
+      "downloadBytes": 113960,
+      "installedBytes": 526336,
+      "sha256": "0b93cf3f42df26c31713a94172b16903fabb75b03494da47b2b99d2f37ad2298",
+      "filename": "pool/main/intel-oneapi-umf-1.0-1.0.3-17_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-openmp-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 91693222,
+      "installedBytes": 511267840,
+      "sha256": "c2dd60eb82b8b63a1ae44e98bd983b1ba1c15e1c87cdf37901723120d6164a3f",
+      "filename": "pool/main/intel-oneapi-openmp-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-shared-runtime-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 96733382,
+      "installedBytes": 499097600,
+      "sha256": "1363f7350e384de53230eaad5bae6b8cfc564048b012289eb1f4f9b11d9a0dec",
+      "filename": "pool/main/intel-oneapi-compiler-shared-runtime-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-tbb-2022.3",
+      "previousVersion": null,
+      "version": "2022.3.1-400",
+      "source": "Signed APT index",
+      "downloadBytes": 907172,
+      "installedBytes": 4777984,
+      "sha256": "01ad7551130d6f30d34ed19084650ffc778d755ef4ede682345bf907bd510641",
+      "filename": "pool/main/intel-oneapi-tbb-2022.3-2022.3.1-400_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 74248454,
+      "installedBytes": 354725888,
+      "sha256": "65b3aa66a191c5b3df08ba35a64fcb42e751897ca3cb9093b9ee42e53feda890",
+      "filename": "pool/main/intel-oneapi-compiler-dpcpp-cpp-runtime-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-shared-common-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 73719662,
+      "installedBytes": 351483904,
+      "sha256": "d07cac0683a1f9a667bae175b2649b62d9a340d4871f8d22ea3948730c10d5a5",
+      "filename": "pool/main/intel-oneapi-compiler-shared-common-2025.3-2025.3.2-832_all.deb"
+    },
+    {
+      "name": "intel-oneapi-dpcpp-debugger-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-7",
+      "source": "Signed APT index",
+      "downloadBytes": 443597754,
+      "installedBytes": 543086592,
+      "sha256": "e18bef111d389603228b399e280f898a72be514d4cb4ca5c9e30492640fb2db2",
+      "filename": "pool/main/intel-oneapi-dpcpp-debugger-2025.3-2025.3.1-7_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-shared-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 15209746,
+      "installedBytes": 120170496,
+      "sha256": "85f0fd9843ba5cd8d8854e101c289c1f61e0f73465afccca938cc9ce936e7a2d",
+      "filename": "pool/main/intel-oneapi-compiler-shared-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-tbb-devel-2022.3",
+      "previousVersion": null,
+      "version": "2022.3.1-400",
+      "source": "Signed APT index",
+      "downloadBytes": 1530780,
+      "installedBytes": 7914496,
+      "sha256": "eb085a1930230c9eda5e6ed32ebc167e9cad7c053f9cd5623201df08a5362947",
+      "filename": "pool/main/intel-oneapi-tbb-devel-2022.3-2022.3.1-400_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-dev-utilities-eclipse-cfg-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-15",
+      "source": "Signed APT index",
+      "downloadBytes": 3080,
+      "installedBytes": 46080,
+      "sha256": "9aff47991f917b2e4ca8e40b0cd33cff157e1b423926876371a873aae19e5de3",
+      "filename": "pool/main/intel-oneapi-dev-utilities-eclipse-cfg-2025.3-2025.3.1-15_all.deb"
+    },
+    {
+      "name": "intel-oneapi-dev-utilities-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-15",
+      "source": "Signed APT index",
+      "downloadBytes": 10227842,
+      "installedBytes": 20423680,
+      "sha256": "61ab278788edbc2ad047e8f6f63f1f73f5508b4c96cc2b05e449289061a76c7d",
+      "filename": "pool/main/intel-oneapi-dev-utilities-2025.3-2025.3.1-15_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-dpcpp-cpp-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 178619162,
+      "installedBytes": 910002176,
+      "sha256": "b36e18609d627a10fa4ca3b20e3bb34270a149175872936e6f7499bd8b873d13",
+      "filename": "pool/main/intel-oneapi-dpcpp-cpp-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-libdpstd-devel-2022.10",
+      "previousVersion": null,
+      "version": "2022.10.0-275",
+      "source": "Signed APT index",
+      "downloadBytes": 318896,
+      "installedBytes": 3310592,
+      "sha256": "b7172453b5f31fabc864d5b8793979ffd3c472b6af1dd01a434dc9ffb241474d",
+      "filename": "pool/main/intel-oneapi-libdpstd-devel-2022.10-2022.10.0-275_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-compiler-dpcpp-cpp-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.2-832",
+      "source": "Signed APT index",
+      "downloadBytes": 1788,
+      "installedBytes": 0,
+      "sha256": "ade02210e0d9e5edf8c583abe7c5bda8fcf3ef817675a55b1eadf56cd6672df5",
+      "filename": "pool/main/intel-oneapi-compiler-dpcpp-cpp-2025.3-2025.3.2-832_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-classic-include-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 662304,
+      "installedBytes": 19057664,
+      "sha256": "4ba39c1de76e318723c35c3043f2ad6279eb13a8658955eb4c36c595cf672f9c",
+      "filename": "pool/main/intel-oneapi-mkl-classic-include-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-core-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 110248038,
+      "installedBytes": 561377280,
+      "sha256": "1648440662a5146d2064456c6e7ba23b00dbe63cb4a26e3563eb43b4912ace2f",
+      "filename": "pool/main/intel-oneapi-mkl-core-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-core-devel-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 106340390,
+      "installedBytes": 835340288,
+      "sha256": "d2efe5d549803e80c3a9b3e5e092860f0acdd2f37da0e1c12de17d2e730035e6",
+      "filename": "pool/main/intel-oneapi-mkl-core-devel-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-blas-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 13003194,
+      "installedBytes": 81705984,
+      "sha256": "deb413a909822c14a6ee8eb270d5edb3351dc1c2656175ef40a7f99e025e6aab",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-blas-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-lapack-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 6586008,
+      "installedBytes": 35513344,
+      "sha256": "5296ef4a969688e3af40ebd851162523e3b5d4f63fea1d2f48a8dfd6a675a0a5",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-lapack-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-dft-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 2655212,
+      "installedBytes": 37174272,
+      "sha256": "e825872685f8b93130e32ca1b72d31cad808042f97f956b5e8e86065f94d29e8",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-dft-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-sparse-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 15967514,
+      "installedBytes": 78910464,
+      "sha256": "1261ee1b3ce52dfcc642ba541953af144308b2242e57ab7a32550da51882afaf",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-sparse-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-vm-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 34242250,
+      "installedBytes": 106529792,
+      "sha256": "47f9a6fa7fcc9bcc98de93cfea2c92cfda45f9e86ddd8129176f527e53a7f7e9",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-vm-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-rng-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 15010918,
+      "installedBytes": 85229568,
+      "sha256": "8559a0e7cdcd77f8f4e97c490b0d5e055605b21815e93d88383c53772f60c507",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-rng-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-stats-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 4616964,
+      "installedBytes": 19771392,
+      "sha256": "426fd7795f4ef278930e2ea8a0021b4ff3460ab1c826206e01a17458cca9a9ba",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-stats-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-data-fitting-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 1328912,
+      "installedBytes": 8335360,
+      "sha256": "ca9b47611b8e7b8503b087ca7de4ff6417325c10685d6d0254df1eb3a668aca8",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-data-fitting-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 2676,
+      "installedBytes": 33792,
+      "sha256": "d3db31980517d70ba5febee14e089ac75844a9420ffde2baa43dc6f3e7269df8",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-include-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 130628,
+      "installedBytes": 2379776,
+      "sha256": "5fa96fb892c4b818fb176e556f3a93f99235affe0b47b7766717b9d6dcbd44ae",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-include-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "intel-oneapi-mkl-sycl-devel-2025.3",
+      "previousVersion": null,
+      "version": "2025.3.1-8",
+      "source": "Signed APT index",
+      "downloadBytes": 103917378,
+      "installedBytes": 980125696,
+      "sha256": "73c70ab19f76d2c4cb64686800b2682d01a79f3a686454ff6d0b5198ce5f4e0d",
+      "filename": "pool/main/intel-oneapi-mkl-sycl-devel-2025.3-2025.3.1-8_amd64.deb"
+    },
+    {
+      "name": "libigdgmm12",
+      "previousVersion": "22.3.17+ds1-1ubuntu1",
+      "version": "22.8.1",
+      "source": "Intel GitHub release",
+      "downloadBytes": 180126,
+      "installedBytes": 831488,
+      "sha256": null,
+      "filename": "libigdgmm12_22.8.1_amd64.deb"
+    },
+    {
+      "name": "intel-opencl-icd",
+      "previousVersion": null,
+      "version": "25.35.35096.9-0",
+      "source": "Intel GitHub release",
+      "downloadBytes": 2778630,
+      "installedBytes": 31651840,
+      "sha256": null,
+      "filename": "intel-opencl-icd_25.35.35096.9-0_amd64.deb"
+    },
+    {
+      "name": "libze1",
+      "previousVersion": null,
+      "version": "1.16.1-1build1",
+      "source": "Signed APT index",
+      "downloadBytes": 212352,
+      "installedBytes": 1319936,
+      "sha256": "1b6f94fa36fe35ff960bcbcc1ef61bbd6f617855bf61d961c8b9e398cb92a2e3",
+      "filename": "pool/universe/l/level-zero/libze1_1.16.1-1build1_amd64.deb"
+    },
+    {
+      "name": "libze-dev",
+      "previousVersion": null,
+      "version": "1.16.1-1build1",
+      "source": "Signed APT index",
+      "downloadBytes": 121462,
+      "installedBytes": 1752064,
+      "sha256": "c4afc8a13f4d7d115121f39f271b765a5bbb85ee8332766afa8687f317fc776d",
+      "filename": "pool/universe/l/level-zero/libze-dev_1.16.1-1build1_amd64.deb"
+    },
+    {
+      "name": "libze-intel-gpu1",
+      "previousVersion": null,
+      "version": "25.35.35096.9-0",
+      "source": "Intel GitHub release",
+      "downloadBytes": 3669232,
+      "installedBytes": 44858368,
+      "sha256": null,
+      "filename": "libze-intel-gpu1_25.35.35096.9-0_amd64.deb"
+    }
+  ]
+}

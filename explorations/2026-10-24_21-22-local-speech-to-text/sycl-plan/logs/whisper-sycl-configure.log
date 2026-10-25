@@ -1,0 +1,75 @@
+-- The C compiler identification is IntelLLVM 2025.3.2
+-- The CXX compiler identification is IntelLLVM 2025.3.2
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/intel/oneapi/compiler/2025.3/bin/icx - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/intel/oneapi/compiler/2025.3/bin/icpx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- whisper.cpp version: 1.9.5
+-- Found Git: /usr/bin/git (found version "2.43.0") 
+-- The ASM compiler identification is IntelLLVM
+-- Found assembler: /opt/intel/oneapi/compiler/2025.3/bin/icx
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fiopenmp (found version "5.1") 
+-- Found OpenMP_CXX: -fiopenmp (found version "5.1") 
+-- Found OpenMP: TRUE (found version "5.1")  
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- GGML_SYCL_TARGET=INTEL
+-- Performing Test SUPPORTS_SYCL
+-- Performing Test SUPPORTS_SYCL - Success
+-- Using oneAPI Release SYCL compiler (icpx).
+-- SYCL found
+-- SYCL Compiler version: 20250302
+-- SYCL_INCLUDE_DIR: /opt/intel/oneapi/compiler/2025.3/include
+-- SYCL_LIBRARY=/opt/intel/oneapi/compiler/2025.3/lib/libsycl.so
+-- Found IntelSYCL: /opt/intel/oneapi/compiler/2025.3/include (found version "202012") 
+-- GGML_SYCL_SUPPORT_LEVEL_ZERO_API ON
+-- Level Zero loader found: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so
+-- Level Zero development headers found: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/include
+-- oneDNN support disabled by the user
+-- MKL_VERSION: 2025.3.0
+-- MKL_ROOT: /opt/intel/oneapi/mkl/2025.3
+-- MKL_ARCH: intel64
+-- MKL_SYCL_LINK: None, set to ` dynamic` by default
+-- MKL_LINK: None, set to ` dynamic` by default
+-- MKL_SYCL_INTERFACE_FULL: None, set to ` intel_ilp64` by default
+-- MKL_INTERFACE_FULL: None, set to ` intel_ilp64` by default
+-- MKL_SYCL_THREADING: None, set to ` tbb_thread` by default
+-- MKL_THREADING: None, set to ` intel_thread` by default
+-- MKL_SYCL_MPI: None, set to ` intelmpi` by default
+-- MKL_MPI: None, set to ` intelmpi` by default
+-- Could NOT find mkl_scalapack_ilp64 for target MKL::MKL_SCALAPACK
+-- Could NOT find mkl_cdft_core for target MKL::MKL_CDFT
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_intel_ilp64.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_intel_thread.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_core.so
+-- Could NOT find mkl_blacs_intelmpi_ilp64 for targets MKL::MKL_SCALAPACK, MKL::MKL_CDFT, and MKL::MKL_BLACS
+-- Could NOT find mkl_sycl_distributed_dft for target MKL::MKL_SYCL_DISTRIBUTED_DFT
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_blas.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_lapack.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_dft.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_sparse.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_data_fitting.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_rng.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_stats.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_vm.so
+-- Found /opt/intel/oneapi/mkl/2025.3/lib/libmkl_tbb_thread.so
+-- Found /opt/intel/oneapi/compiler/2025.3/lib/libiomp5.so
+-- find GGML_SYCL_HOST_MEM_FALLBACK
+-- Including SYCL backend
+-- ggml version: 0.26.0
+-- ggml commit:  a0083f7
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl

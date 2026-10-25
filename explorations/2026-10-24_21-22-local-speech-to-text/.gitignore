@@ -1,0 +1,27 @@
+# Keep documentation and experiment evidence, not local runtime assets.
+/build-*/
+/models/
+/source/
+/downloads/
+/cache/
+/tmp/
+/recordings/
+
+# Raw agent event streams contain redundant session metadata.
+/results/*-events.jsonl
+
+# Local package indexes, trust stores, installers, and build artifacts.
+/sycl-plan/cache/
+/sycl-plan/downloads/
+/sycl-plan/lists/
+/sycl-plan/gnupg/
+/sycl-plan/keys/
+/sycl-plan/compiler-2025.3.2-device-architecture.def
+/sycl-plan/empty-*.d/
+/sycl-plan/level-zero-1.24.1/build/
+/sycl-plan/level-zero-1.24.1/prefix/
+/sycl-plan/level-zero-1.24.1/source/
+/sycl-plan/level-zero-1.24.1/*.tar.gz
+
+# Compressed APT solver state is not needed alongside the text logs.
+/sycl-plan/logs/eipp.log.xz

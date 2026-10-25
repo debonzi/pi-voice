@@ -1,0 +1,69 @@
+{
+  "configuration": {
+    "version": "1.9.5",
+    "model": "medium",
+    "file": "recordings/prompt-002.wav",
+    "durationSeconds": 38.142125,
+    "audioSha256": "3796a4c7194ef98f05de7a3e8949ba8345963a50dbaa7b40c00fef3f8b23ae73",
+    "language": "pt",
+    "threads": 8,
+    "beamSize": 5,
+    "initialPrompt": null,
+    "flashAttention": true,
+    "repetitions": 3,
+    "includesModelLoading": true,
+    "separateProcessPerRun": true,
+    "gpuDevice": "Intel(R) Arc(tm) Graphics (MTL)",
+    "gpuVisibleDevices": "0",
+    "cacheDirectory": "cache/vulkan"
+  },
+  "firstVulkanInvocation": {
+    "stem": "prompt-002-medium-vulkan-first",
+    "wallSeconds": 13.31,
+    "maxRssKiB": 247396,
+    "encodeSeconds": 5.35353,
+    "gpuVerified": true,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo que eu estou falando e transcrever para o prompt do pai o enter não deve ser pressionado automaticamente o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente e sim submeter o modelo você consegue entender tudo isso que eu estou falando"
+  },
+  "cpu": {
+    "wallSeconds": [
+      20.96,
+      37.21,
+      36.33
+    ],
+    "medianWallSeconds": 36.33,
+    "minWallSeconds": 20.96,
+    "maxWallSeconds": 37.21,
+    "medianEncodeSeconds": 26.45316,
+    "medianMaxRssKiB": 2152676,
+    "transcriptStable": true,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pi. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+  },
+  "vulkan": {
+    "wallSeconds": [
+      9,
+      9.77,
+      12.67
+    ],
+    "medianWallSeconds": 9.77,
+    "minWallSeconds": 9,
+    "maxWallSeconds": 12.67,
+    "medianEncodeSeconds": 4.49101,
+    "medianMaxRssKiB": 207468,
+    "transcriptStable": true,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo que eu estou falando e transcrever para o prompt do pai o enter não deve ser pressionado automaticamente o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente e sim submeter o modelo você consegue entender tudo isso que eu estou falando"
+  },
+  "speedupMedian": 3.7185261003070624,
+  "elapsedReductionPercent": 73.10762455271126,
+  "encoderSpeedupMedian": 5.890247405372065,
+  "currentCpuMatchesHistoricalMedium": true,
+  "firstGpuMatchesRepeatedGpu": true,
+  "cpuGpuSameWordsIgnoringCaseAndPunctuation": false,
+  "limitations": [
+    "System load, thermals and power not controlled.",
+    "First GPU invocation kept separate from subsequent cache-reusing processes.",
+    "GPU process RSS excludes some device/shared allocations and is not total memory footprint.",
+    "No independently established verbatim reference or punctuation score.",
+    "Observed output changes are not yet diagnosed as numerical differences, precision effects or a backend defect."
+  ]
+}

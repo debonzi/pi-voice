@@ -1,0 +1,4 @@
+ONEAPI_ROOT=/opt/intel/oneapi
+CMPLR_ROOT=/opt/intel/oneapi/compiler/2025.3
+MKLROOT=/opt/intel/oneapi/mkl/2025.3
+TBBROOT=/opt/intel/oneapi/tbb/2022.3/env/..

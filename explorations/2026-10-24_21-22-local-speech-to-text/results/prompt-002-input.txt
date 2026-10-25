@@ -1,0 +1,4 @@
+codec_name=pcm_s16le
+sample_rate=16000
+channels=1
+duration=38.142125

@@ -1,0 +1,71 @@
+{
+  "configuration": {
+    "model": "medium",
+    "version": "1.9.5",
+    "compiler": "2025.3.2",
+    "recording": "prompt-002.wav",
+    "audioDurationSeconds": 38.142125,
+    "audioSha256": "3796a4c7194ef98f05de7a3e8949ba8345963a50dbaa7b40c00fef3f8b23ae73",
+    "device": "Intel Arc Graphics via SYCL Level Zero",
+    "isolatedLoader": "1.24.1",
+    "language": "pt",
+    "threads": 8,
+    "beamSize": 5,
+    "initialPrompt": null,
+    "flashAttentionRequested": true,
+    "oneDNN": false,
+    "graphs": false,
+    "syclCachePersistent": 0,
+    "onlyIntendedRuntimeOptionDifference": "GGML_SYCL_F16 OFF versus ON",
+    "separateProcessPerRun": true,
+    "includesModelLoading": true
+  },
+  "firstFP16Invocation": {
+    "stem": "prompt-002-medium-sycl-fp16-first",
+    "wallSeconds": 58.52,
+    "maxRssKiB": 712828,
+    "encodeSeconds": 31.42785,
+    "batchDecodeSeconds": 9.55768,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+  },
+  "fp16Off": {
+    "wallSeconds": [
+      31.99,
+      32.33,
+      32.11
+    ],
+    "medianWallSeconds": 32.11,
+    "minWallSeconds": 31.99,
+    "maxWallSeconds": 32.33,
+    "medianEncodeSeconds": 17.52735,
+    "medianBatchDecodeSeconds": 12.063139999999999,
+    "transcriptStable": true,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+  },
+  "fp16On": {
+    "wallSeconds": [
+      31.12,
+      29.8,
+      29.66
+    ],
+    "medianWallSeconds": 29.8,
+    "minWallSeconds": 29.66,
+    "maxWallSeconds": 31.12,
+    "medianEncodeSeconds": 18.47139,
+    "medianBatchDecodeSeconds": 8.31886,
+    "transcriptStable": true,
+    "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+  },
+  "speedupMedian": 1.0775167785234898,
+  "elapsedReductionPercent": 7.194020554344438,
+  "allSevenTranscriptsByteIdentical": true,
+  "matchesPriorSYCLTranscript": true,
+  "limitations": [
+    "Single audio sample, three comparison trials per setting.",
+    "System thermals, power and background load not strictly controlled.",
+    "First FP16 invocation excluded from repeat medians, not a controlled cold benchmark.",
+    "Identical output on this sample does not guarantee numerical or transcript equivalence on others.",
+    "No contemporaneous CPU/Vulkan rerun in this comparison.",
+    "Process RSS is not complete integrated-GPU memory consumption."
+  ]
+}

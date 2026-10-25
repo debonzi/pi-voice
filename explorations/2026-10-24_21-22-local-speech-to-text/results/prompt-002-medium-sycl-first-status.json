@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "shellExitStatus": 139,
+  "signal": 11,
+  "transcriptProduced": false,
+  "wallSecondsBeforeFailure": 2.58,
+  "syclCachePersistent": 1,
+  "gnuTimeReportedExitStatus": 0,
+  "note": "The raw GNU time file also reports termination by signal 11. Its exit_status=0 field is not evidence of success for this signalled process. The shell returned 139. This failed attempt is excluded from performance comparisons."
+}

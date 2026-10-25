@@ -1,0 +1,24 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+-- Building loader as dynamic library
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Saved Product GUID: 1.24.1
+-- project version: 1.24.1
+-- Using Product GUID: f99c0560-281a-4879-9cc6-e68e3bdf7533 for version 1.24.1
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/build

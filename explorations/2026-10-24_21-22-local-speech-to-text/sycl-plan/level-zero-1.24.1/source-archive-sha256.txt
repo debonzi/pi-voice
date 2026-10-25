@@ -1,0 +1,1 @@
+87e9d40f282926fb3c6abca98b73c5725796e9e44e9009bdd5d03e94426d2af7  /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/level-zero-v1.24.1.tar.gz

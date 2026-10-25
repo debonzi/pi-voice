@@ -1,0 +1,712 @@
+   1118553:	find library=libiomp5.so [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/glibc-hwcaps/x86-64-v3:/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/glibc-hwcaps/x86-64-v2:/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libiomp5.so
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/tcm/1.4/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/umf/1.0/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libiomp5.so
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/mkl/2025.3/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libiomp5.so
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/compiler/2025.3/lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/glibc-hwcaps/x86-64-v3/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/glibc-hwcaps/x86-64-v2/libiomp5.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libiomp5.so
+   1118553:	
+   1118553:	find library=libsycl.so.8 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libsycl.so.8
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libsycl.so.8
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libsycl.so.8
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libsycl.so.8
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libsycl.so.8
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libsycl.so.8
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libsycl.so.8
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+   1118553:	
+   1118553:	find library=libze_loader.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so.1
+   1118553:	
+   1118553:	find library=libmkl_sycl_blas.so.5 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libmkl_sycl_blas.so.5
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libmkl_sycl_blas.so.5
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libmkl_sycl_blas.so.5
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libmkl_sycl_blas.so.5
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_blas.so.5
+   1118553:	
+   1118553:	find library=libmkl_intel_ilp64.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libmkl_intel_ilp64.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libmkl_intel_ilp64.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libmkl_intel_ilp64.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libmkl_intel_ilp64.so.2
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libmkl_intel_ilp64.so.2
+   1118553:	
+   1118553:	find library=libmkl_tbb_thread.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libmkl_tbb_thread.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libmkl_tbb_thread.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libmkl_tbb_thread.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libmkl_tbb_thread.so.2
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libmkl_tbb_thread.so.2
+   1118553:	
+   1118553:	find library=libmkl_core.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libmkl_core.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libmkl_core.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libmkl_core.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libmkl_core.so.2
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libmkl_core.so.2
+   1118553:	
+   1118553:	find library=libtbb.so.12 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libtbb.so.12
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libtbb.so.12
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libtbb.so.12
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libtbb.so.12
+   1118553:	
+   1118553:	find library=libm.so.6 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libm.so.6
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libm.so.6
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libm.so.6
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libm.so.6
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib:glibc-hwcaps/x86-64-v3:glibc-hwcaps/x86-64-v2::/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libm.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v3/libm.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v2/libm.so.6
+   1118553:	  trying file=libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v3/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/glibc-hwcaps/x86-64-v2/libm.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/libm.so.6
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+   1118553:	
+   1118553:	find library=libOpenCL.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libOpenCL.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libOpenCL.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libOpenCL.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libOpenCL.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libOpenCL.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libOpenCL.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libOpenCL.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libOpenCL.so.1
+   1118553:	
+   1118553:	find library=libstdc++.so.6 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libstdc++.so.6
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libstdc++.so.6
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libstdc++.so.6
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libstdc++.so.6
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib:glibc-hwcaps/x86-64-v3:glibc-hwcaps/x86-64-v2::/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libstdc++.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v3/libstdc++.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v2/libstdc++.so.6
+   1118553:	  trying file=libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libstdc++.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/libstdc++.so.6
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libstdc++.so.6
+   1118553:	
+   1118553:	find library=libgcc_s.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libgcc_s.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libgcc_s.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libgcc_s.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libgcc_s.so.1
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib:glibc-hwcaps/x86-64-v3:glibc-hwcaps/x86-64-v2::/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libgcc_s.so.1
+   1118553:	  trying file=glibc-hwcaps/x86-64-v3/libgcc_s.so.1
+   1118553:	  trying file=glibc-hwcaps/x86-64-v2/libgcc_s.so.1
+   1118553:	  trying file=libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libgcc_s.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/libgcc_s.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libgcc_s.so.1
+   1118553:	
+   1118553:	find library=libc.so.6 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libc.so.6
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libc.so.6
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libc.so.6
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libc.so.6
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib:glibc-hwcaps/x86-64-v3:glibc-hwcaps/x86-64-v2::/opt/intel/oneapi/mkl/2025.3/lib:/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libc.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v3/libc.so.6
+   1118553:	  trying file=glibc-hwcaps/x86-64-v2/libc.so.6
+   1118553:	  trying file=libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libc.so.6
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/lib/intel64/gcc4.8/libc.so.6
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+   1118553:	
+   1118553:	find library=librt.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/librt.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/librt.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/librt.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/librt.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/librt.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/librt.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/librt.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/librt.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/librt.so.1
+   1118553:	
+   1118553:	find library=libdl.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libdl.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libdl.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libdl.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libdl.so.2
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libdl.so.2
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libdl.so.2
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libdl.so.2
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libdl.so.2
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+   1118553:	
+   1118553:	find library=libpthread.so.0 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libpthread.so.0
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libpthread.so.0
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libpthread.so.0
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libpthread.so.0
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libpthread.so.0
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libpthread.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libpthread.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libpthread.so.0
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+   1118553:	
+   1118553:	find library=libur_loader.so.0 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libur_loader.so.0
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libur_loader.so.0
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libur_loader.so.0
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libur_loader.so.0
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libur_loader.so.0
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libur_loader.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libur_loader.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libur_loader.so.0
+   1118553:	
+   1118553:	find library=libsvml.so [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libsvml.so
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libsvml.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libsvml.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libsvml.so
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libsvml.so
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libsvml.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libsvml.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libsvml.so
+   1118553:	
+   1118553:	find library=libirng.so [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libirng.so
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libirng.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libirng.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libirng.so
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libirng.so
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libirng.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libirng.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libirng.so
+   1118553:	
+   1118553:	find library=libimf.so [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libimf.so
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libimf.so
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libimf.so
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libimf.so
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libimf.so
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libimf.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libimf.so
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libimf.so
+   1118553:	
+   1118553:	find library=libintlc.so.5 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libintlc.so.5
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libintlc.so.5
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libintlc.so.5
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libintlc.so.5
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libintlc.so.5
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libintlc.so.5
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libintlc.so.5
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libintlc.so.5
+   1118553:	
+   1118553:	find library=libz.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libz.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libz.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libz.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libz.so.1
+   1118553:	 search path=/opt/intel/oneapi/compiler/2025.3/lib/../lib/glibc-hwcaps/x86-64-v3:/opt/intel/oneapi/compiler/2025.3/lib/../lib/glibc-hwcaps/x86-64-v2:/opt/intel/oneapi/compiler/2025.3/lib/../lib		(RUNPATH from file /opt/intel/oneapi/compiler/2025.3/lib/libur_loader.so.0)
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/../lib/glibc-hwcaps/x86-64-v3/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/../lib/glibc-hwcaps/x86-64-v2/libz.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/../lib/libz.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libz.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib64/ld-linux-x86-64.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libz.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libintlc.so.5
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libimf.so
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libirng.so
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libsvml.so
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libgcc_s.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/librt.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libstdc++.so.6
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libur_loader.so.0
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libOpenCL.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libtbb.so.12
+   1118553:	
+   1118553:	find library=libtbbmalloc.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libtbbmalloc.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libtbbmalloc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libtbbmalloc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libtbbmalloc.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libtbbmalloc.so.2
+   1118553:	
+   1118553:	find library=libtcm.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libtcm.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libtcm.so.1
+   1118553:	
+   1118553:	find library=libtcm.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libtcm.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libtcm.so.1
+   1118553:	
+   1118553:	find library=libhwloc.so.15 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libhwloc.so.15
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libhwloc.so.15
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/tcm/1.4/lib/libhwloc.so.15
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/tcm/1.4/lib/libtcm.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/mkl/2025.3/lib/libmkl_core.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/mkl/2025.3/lib/libmkl_tbb_thread.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/mkl/2025.3/lib/libmkl_intel_ilp64.so.2
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libsycl.so.8
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/mkl/2025.3/lib/libmkl_sycl_blas.so.5
+   1118553:	
+   1118553:	
+   1118553:	calling init: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libiomp5.so
+   1118553:	
+   1118553:	
+   1118553:	initialize program: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli
+   1118553:	
+   1118553:	
+   1118553:	transferring control: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli
+   1118553:	
+   1118553:	find library=libze_intel_gpu.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_intel_gpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libze_intel_gpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libze_intel_gpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libze_intel_gpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libze_intel_gpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libze_intel_gpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libze_intel_gpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libze_intel_gpu.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libze_intel_gpu.so.1
+   1118553:	
+   1118553:	find library=libigdgmm.so.12 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libigdgmm.so.12
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libigdgmm.so.12
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libigdgmm.so.12
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libigdgmm.so.12
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libigdgmm.so.12
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libigdgmm.so.12
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libigdgmm.so.12
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libigdgmm.so.12
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libigdgmm.so.12
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libigdgmm.so.12
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libze_intel_gpu.so.1
+   1118553:	
+   1118553:	find library=libze_intel_gpu_legacy1.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libze_intel_gpu_legacy1.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	 search path=/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3:/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3:/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2:/usr/lib/x86_64-linux-gnu:/lib/glibc-hwcaps/x86-64-v3:/lib/glibc-hwcaps/x86-64-v2:/lib:/usr/lib/glibc-hwcaps/x86-64-v3:/usr/lib/glibc-hwcaps/x86-64-v2:/usr/lib		(system search path)
+   1118553:	  trying file=/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/lib/glibc-hwcaps/x86-64-v3/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/lib/glibc-hwcaps/x86-64-v2/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/glibc-hwcaps/x86-64-v3/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/glibc-hwcaps/x86-64-v2/libze_intel_gpu_legacy1.so.1
+   1118553:	  trying file=/usr/lib/libze_intel_gpu_legacy1.so.1
+   1118553:	
+   1118553:	find library=libze_intel_vpu.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_intel_vpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libze_intel_vpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libze_intel_vpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libze_intel_vpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libze_intel_vpu.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libze_intel_vpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libze_intel_vpu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libze_intel_vpu.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libze_intel_vpu.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/libze_intel_vpu.so.1
+   1118553:	  trying file=/lib/libze_intel_vpu.so.1
+   1118553:	  trying file=/usr/lib/libze_intel_vpu.so.1
+   1118553:	
+   1118553:	find library=libze_intel_npu.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_intel_npu.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libze_intel_npu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libze_intel_npu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libze_intel_npu.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libze_intel_npu.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libze_intel_npu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libze_intel_npu.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libze_intel_npu.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libze_intel_npu.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/libze_intel_npu.so.1
+   1118553:	  trying file=/lib/libze_intel_npu.so.1
+   1118553:	  trying file=/usr/lib/libze_intel_npu.so.1
+   1118553:	
+   1118553:	find library=libze_tracing_layer.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_tracing_layer.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_tracing_layer.so.1
+   1118553:	
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	find library=libnl-genl-3.so.200 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libnl-genl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libnl-genl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libnl-genl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libnl-genl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libnl-genl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libnl-genl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libnl-genl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libnl-genl-3.so.200
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libnl-genl-3.so.200
+   1118553:	
+   1118553:	find library=libnl-3.so.200 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libnl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libnl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libnl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libnl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libnl-3.so.200
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libnl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libnl-3.so.200
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libnl-3.so.200
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libnl-3.so.200
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libnl-3.so.200
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libnl-genl-3.so.200
+   1118553:	
+   1118553:	find library=libur_adapter_level_zero.so.0 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libur_adapter_level_zero.so.0
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libur_adapter_level_zero.so.0
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libur_adapter_level_zero.so.0
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libur_adapter_level_zero.so.0
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libur_adapter_level_zero.so.0
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libur_adapter_level_zero.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libur_adapter_level_zero.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+   1118553:	
+   1118553:	find library=libumf.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libumf.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libumf.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libumf.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/umf/1.0/lib/libumf.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero.so.0
+   1118553:	
+   1118553:	find library=libur_adapter_level_zero_v2.so.0 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libur_adapter_level_zero_v2.so.0
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	
+   1118553:	
+   1118553:	calling init: /opt/intel/oneapi/compiler/2025.3/lib/libur_adapter_level_zero_v2.so.0
+   1118553:	
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	find library=libigc.so.2 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libigc.so.2
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libigc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libigc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libigc.so.2
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libigc.so.2
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libigc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libigc.so.2
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libigc.so.2
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/usr/local/lib/libigc.so.2
+   1118553:	
+   1118553:	find library=libzstd.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libzstd.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libzstd.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libzstd.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libzstd.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libzstd.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libzstd.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libzstd.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libzstd.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libzstd.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /lib/x86_64-linux-gnu/libzstd.so.1
+   1118553:	
+   1118553:	
+   1118553:	calling init: /usr/local/lib/libigc.so.2
+   1118553:	
+   1118553:	find library=libigdml.so.1 [0]; searching
+   1118553:	 search path=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libigdml.so.1
+   1118553:	 search path=/opt/intel/oneapi/tcm/1.4/lib:/opt/intel/oneapi/umf/1.0/lib:/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/tcm/1.4/lib/libigdml.so.1
+   1118553:	  trying file=/opt/intel/oneapi/umf/1.0/lib/libigdml.so.1
+   1118553:	  trying file=/opt/intel/oneapi/tbb/2022.3/env/../lib/intel64/gcc4.8/libigdml.so.1
+   1118553:	 search path=/opt/intel/oneapi/mkl/2025.3/lib		(RUNPATH from file /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/build-sycl/bin/whisper-cli)
+   1118553:	  trying file=/opt/intel/oneapi/mkl/2025.3/lib/libigdml.so.1
+   1118553:	 search path=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib:/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib:/opt/intel/oneapi/compiler/2025.3/lib		(LD_LIBRARY_PATH)
+   1118553:	  trying file=/opt/intel/oneapi/debugger/2025.3/opt/debugger/lib/libigdml.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/opt/compiler/lib/libigdml.so.1
+   1118553:	  trying file=/opt/intel/oneapi/compiler/2025.3/lib/libigdml.so.1
+   1118553:	 search cache=/etc/ld.so.cache
+   1118553:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+   1118553:	  trying file=/lib/x86_64-linux-gnu/libigdml.so.1
+   1118553:	  trying file=/usr/lib/x86_64-linux-gnu/libigdml.so.1
+   1118553:	  trying file=/lib/libigdml.so.1
+   1118553:	  trying file=/usr/lib/libigdml.so.1
+   1118553:	
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)
+   1118553:	/lib/x86_64-linux-gnu/libze_intel_gpu.so.1: error: symbol lookup error: undefined symbol: zetGetCommandListExpProcAddrTable (fatal)

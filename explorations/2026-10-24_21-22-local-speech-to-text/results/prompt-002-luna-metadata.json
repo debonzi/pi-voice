@@ -1,0 +1,26 @@
+{
+  "provider": "openai-codex",
+  "model": "gpt-6-luna",
+  "stopReason": "stop",
+  "assistantCompletions": 1,
+  "toolExecutions": 0,
+  "originalWordCount": 62,
+  "resultWordCount": 62,
+  "sameWordSequenceIgnoringPunctuationAndCase": true,
+  "retainedPreviouslyOmittedPhraseIgnoringPunctuationAndCase": true,
+  "usage": {
+    "input": 248,
+    "output": 76,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "reasoning": 0,
+    "totalTokens": 324,
+    "cost": {
+      "input": 0.000024800000000000003,
+      "output": 0.000037999999999999995,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "total": 0.0000628
+    }
+  }
+}

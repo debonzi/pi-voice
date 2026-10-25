@@ -1,0 +1,21 @@
+Get:1 https://apt.repos.intel.com/oneapi all InRelease [5684 B]
+Get:2 https://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 https://apt.repos.intel.com/oneapi all/main amd64 Packages [744 kB]
+Get:4 https://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:5 https://apt.repos.intel.com/oneapi all/main all Packages [211 kB]
+Get:6 https://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+Get:7 https://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:8 https://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [45.4 kB]
+Get:9 https://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1713 kB]
+Get:10 https://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1222 kB]
+Get:11 https://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:12 https://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1401 kB]
+Get:13 https://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:14 https://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [93.9 kB]
+Get:15 https://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1400 kB]
+Get:16 https://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1805 kB]
+Get:17 https://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [50.7 kB]
+Get:18 https://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1706 kB]
+Fetched 27.4 MB in 18s (1502 kB/s)
+Reading package lists...
+W: Unable to read /etc/apt/-/ - DirectoryExists (2: No such file or directory)

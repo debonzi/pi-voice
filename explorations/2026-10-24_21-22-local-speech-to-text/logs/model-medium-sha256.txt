@@ -1,0 +1,1 @@
+6c14d5adee5f86394037b4e4e8b59f1673b6cee10e3cf0b11bbdbee79c156208  /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/models/ggml-medium.bin

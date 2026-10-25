@@ -1,0 +1,3 @@
+wall_seconds=9.00
+max_rss_kib=206572
+exit_status=0

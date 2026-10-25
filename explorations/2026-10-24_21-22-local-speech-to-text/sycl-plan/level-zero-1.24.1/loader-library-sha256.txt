@@ -1,0 +1,1 @@
+b3f806cea94e122c9c0a8cd616b05bc2302d425b3f3a03ee19576615a1078600  /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so.1.24.1

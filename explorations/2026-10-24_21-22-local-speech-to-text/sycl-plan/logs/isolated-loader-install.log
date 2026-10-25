@@ -1,0 +1,23 @@
+-- Install configuration: "Release"
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/ze_api.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/ze_ddi.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/ze_ddi_common.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/zes_api.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/zes_ddi.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/zet_api.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/zet_ddi.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/layers/zel_tracing_api.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/layers/zel_tracing_ddi.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/layers/zel_tracing_register_cb.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/./include/level_zero/loader/ze_loader.h
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so.1.24.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_loader.so
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/pkgconfig/libze_loader.pc
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/pkgconfig/level-zero.pc
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_validation_layer.so.1.24.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_validation_layer.so.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_validation_layer.so
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_tracing_layer.so.1.24.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_tracing_layer.so.1
+-- Installing: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-24_21-22-local-speech-to-text/sycl-plan/level-zero-1.24.1/prefix/lib/libze_tracing_layer.so

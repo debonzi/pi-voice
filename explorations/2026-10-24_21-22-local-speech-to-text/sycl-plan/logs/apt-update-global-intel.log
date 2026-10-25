@@ -1,0 +1,5 @@
+Get:1 https://apt.repos.intel.com/oneapi all InRelease [5684 B]
+Get:2 https://apt.repos.intel.com/oneapi all/main all Packages [211 kB]
+Get:3 https://apt.repos.intel.com/oneapi all/main amd64 Packages [744 kB]
+Fetched 961 kB in 2s (574 kB/s)
+Reading package lists...

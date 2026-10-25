@@ -1,0 +1,105 @@
+{
+  "configuration": {
+    "version": "1.9.5",
+    "device": "CPU",
+    "threads": 8,
+    "language": "pt",
+    "initialPrompt": null,
+    "beamSize": 5,
+    "temperature": 0,
+    "timestamps": false,
+    "repetitions": 3,
+    "separateProcessPerRun": true,
+    "includesModelLoading": true
+  },
+  "ordering": [
+    "medium",
+    "large-v3-turbo",
+    "large-v3-turbo",
+    "medium",
+    "medium",
+    "large-v3-turbo"
+  ],
+  "limitations": [
+    "Uncontrolled system load, power and temperature.",
+    "Historical small timings are not contemporaneous controls.",
+    "Small transcripts are user-reviewed comparisons, not independently established verbatim references.",
+    "No ground-truth WER or punctuation accuracy measured."
+  ],
+  "recordings": [
+    {
+      "id": "prompt-001",
+      "durationSeconds": 8.7235,
+      "audioSha256": "cb8bb86724172d61663a5cce12129cb92576c128375a35054b6725d19d855001",
+      "models": [
+        {
+          "model": "medium",
+          "wallSeconds": [
+            8.43,
+            18.4,
+            15.67
+          ],
+          "medianWallSeconds": 15.67,
+          "minWallSeconds": 8.43,
+          "maxWallSeconds": 18.4,
+          "medianRealTimeFactor": 1.7962973577119277,
+          "medianMaxRssGiB": 2.022186279296875,
+          "transcriptsByteIdentical": true,
+          "transcript": "Abra o Readme e me explique como executar os testes desse projeto."
+        },
+        {
+          "model": "large-v3-turbo",
+          "wallSeconds": [
+            26.92,
+            23.48,
+            27.89
+          ],
+          "medianWallSeconds": 26.92,
+          "minWallSeconds": 23.48,
+          "maxWallSeconds": 27.89,
+          "medianRealTimeFactor": 3.0859173496876258,
+          "medianMaxRssGiB": 1.7590713500976562,
+          "transcriptsByteIdentical": true,
+          "transcript": "Abra o README e me explique como executar os testes desse projeto."
+        }
+      ]
+    },
+    {
+      "id": "prompt-002",
+      "durationSeconds": 38.142125,
+      "audioSha256": "3796a4c7194ef98f05de7a3e8949ba8345963a50dbaa7b40c00fef3f8b23ae73",
+      "models": [
+        {
+          "model": "medium",
+          "wallSeconds": [
+            24.82,
+            35.12,
+            35
+          ],
+          "medianWallSeconds": 35,
+          "minWallSeconds": 24.82,
+          "maxWallSeconds": 35.12,
+          "medianRealTimeFactor": 0.9176206097588951,
+          "medianMaxRssGiB": 2.052562713623047,
+          "transcriptsByteIdentical": true,
+          "transcript": "neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo o que eu estou falando e transcrever para o prompt do pi. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente pode sim submeter o modelo. Você consegue entender tudo isso que eu estou falando?"
+        },
+        {
+          "model": "large-v3-turbo",
+          "wallSeconds": [
+            48.99,
+            49.94,
+            54.24
+          ],
+          "medianWallSeconds": 49.94,
+          "minWallSeconds": 48.99,
+          "maxWallSeconds": 54.24,
+          "medianRealTimeFactor": 1.3093135214674063,
+          "medianMaxRssGiB": 1.791778564453125,
+          "transcriptsByteIdentical": true,
+          "transcript": "Neste projeto, eu pretendo criar uma extensão para pai.dev que vai escutar tudo que eu estou falando e transcrever para o prompt do pai. O enter não deve ser pressionado automaticamente, o texto deve ficar disponível para que eu possa editar e no momento que eu achar que ele está bom o suficiente, e sim submeter ao modelo. Você consegue entender tudo isso que eu estou falando?"
+        }
+      ]
+    }
+  ]
+}

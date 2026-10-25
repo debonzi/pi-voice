@@ -1,0 +1,3 @@
+INFO: Output filtered by ONEAPI_DEVICE_SELECTOR environment variable, which is set to level_zero:gpu.
+To see device ids, use the --ignore-device-selectors CLI option.
+

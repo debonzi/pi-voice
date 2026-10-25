@@ -1,0 +1,19 @@
+Package: intel-oneapi-compiler-*-2025.3 intel-oneapi-dpcpp-cpp-2025.3 intel-oneapi-openmp-2025.3 intel-oneapi-openmp-common-2025.3 intel-oneapi-icc-eclipse-plugin-cpp-2025.3
+Pin: version 2025.3.2-832
+Pin-Priority: 1001
+
+Package: intel-oneapi-mkl-*-2025.3
+Pin: version 2025.3.1-8
+Pin-Priority: 1001
+
+Package: intel-oneapi-tbb-2022.3 intel-oneapi-tbb-devel-2022.3
+Pin: version 2022.3.1-400
+Pin-Priority: 1001
+
+Package: intel-oneapi-common-vars
+Pin: version 2025.3.1-15
+Pin-Priority: 1001
+
+Package: intel-oneapi-*
+Pin: version 2026.*
+Pin-Priority: -1

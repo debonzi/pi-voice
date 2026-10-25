@@ -1,0 +1,2 @@
+
+ neste projeto eu pretendo criar uma extensão para pi.dev que vai escutar tudo que eu estou falando e transcrever para o prompt do pai o enter não deve ser pressionado automaticamente o texto deve ficar disponível para que eu possa editar e no momento que eu achar que está bom o suficiente e sim submeter o modelo você consegue entender tudo isso que eu estou falando
