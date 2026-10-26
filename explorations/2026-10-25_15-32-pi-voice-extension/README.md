@@ -14,7 +14,7 @@ This is an **Exploration** session, not authorization to implement or install th
 - **Real-time transcription is neither required nor desired.** Transcribe only after recording ends.
 - **Automatic end-of-speech detection is neither required nor desired.** Silence must not decide when recording ends.
 - The existing project selection is the **full Whisper large-v3 model, not large-v3-turbo, through whisper.cpp with Vulkan GPU acceleration**. Do not reopen model/backend selection without a specific reason or requester approval.
-- Inserting text without automatically submitting the prompt is the initial proposal, not yet a confirmed editor contract.
+- Confirmed in the phase-3 conversation: insert dictated text at the cursor, preserving existing typed text on both sides; support successive dictated parts and manual submission only. If the cursor moves during ASR, prefer the least-complex implementation initially; source/component checks favor the delivery-time cursor. The requester selected native paste (accepting large-paste markers) and manual spacing review; no custom editor or extra smart-spacing layer.
 
 Existing context: [project overview](../../README.md) and [previous local speech-to-text exploration](../2026-10-24_21-22-local-speech-to-text/README.md). Previous experiment permissions do not carry forward to new installations, recordings, or execution.
 
@@ -26,8 +26,8 @@ Each phase should record verified findings separately from assumptions/proposals
 | --- | --- | --- | --- |
 | 1. Keyboard activation | Closed as feasibility exploration: basic end-to-end hold/release verified; deferred UX/robustness limits retained | [phase-1-keybindings.md](phase-1-keybindings.md) | Feasible shortcut mechanisms, terminal prerequisites, and fallback options |
 | 2. Audio capture | Closed as basic feasibility: E1/E2 passed; E5 Ctrl+Q → full-large-v3/Vulkan transcription explicitly accepted with `/voice-test pass` | [phase-2-audio-capture.md](phase-2-audio-capture.md) | Capture tool/API recommendation and recording lifecycle |
-| 3. Batch transcription | E5 basic path passed; remaining contract work recommended for a combined phase with 4, not started | [Proposed combined-phase handoff](NEXT-PHASE-HANDOFF.md) | Batch process/result/cancellation ownership |
-| 4. Prompt integration | Not started; recommended for the same lean combined phase as 3 | [Proposed combined-phase handoff](NEXT-PHASE-HANDOFF.md) | Safe asynchronous editor insertion and complete interaction contract |
+| 3. Batch transcription | Combined study closed at requester's direction; E5 basic path accepted, additional lifecycle validation deferred to post-implementation use | [Phase-3 study](phase-3-transcription-and-editor.md) | Batch process/result/cancellation ownership |
+| 4. Prompt integration | Closed as sufficient feasibility: 21/21 synthetic checks passed; native paste/manual spacing selected; additional lifecycle/UI validation deferred, not a plan-closing gate | [Phase-3 study](phase-3-transcription-and-editor.md) | Current-cursor insertion, successive parts, manual submission and safe asynchronous delivery |
 
 ### Phase 1 — Keyboard activation
 
@@ -60,11 +60,11 @@ Completion criteria: recommend a capture approach, identify dependencies/permiss
 
 Handoff from phase 1: activation events, repeat behavior, terminal limits, and manual stop/cancel requirements.
 
-### Recommended next phase — combine original phases 3 and 4
+### Combined phases 3 and 4 — recommendation and accepted closeout
 
 After E5 acceptance, the requester asked whether the remaining phases should be combined. **Recommendation: yes**, as one lean “Batch transcription and prompt-editor integration” phase with separate lifecycle and editor checklists. One CLI invocation per completed recording is the proven baseline; a persistent model service/benchmark campaign is optional follow-up only if a material requirement justifies it. The new uncertainty is safe delivery of the asynchronous result while preserving edits, cancellation and session ownership, not repeating model/capture feasibility.
 
-[NEXT-PHASE-HANDOFF.md](NEXT-PHASE-HANDOFF.md) records the rationale, trade-offs, scope and ready-to-paste Exploration prompt. The consolidation is a recommendation for the requester to select next, not an automatically started phase. Its expected record is `phase-3-transcription-and-editor.md`. The original phase questions below remain a scope map, not two mandatory separate test campaigns.
+[NEXT-PHASE-HANDOFF.md](NEXT-PHASE-HANDOFF.md) records the rationale, trade-offs, scope and ready-to-paste Exploration prompt. The consolidation was initially a recommendation, not an automatic phase transition. The requester selected and has now closed the lean editor study as sufficient feasibility; its findings, decisions, deferred checks and closeout are in [phase-3-transcription-and-editor.md](phase-3-transcription-and-editor.md). The original phase questions below remain a scope map, not two mandatory separate test campaigns.
 
 ### Original phase 3 — Batch transcription with whisper.cpp
 
@@ -110,7 +110,7 @@ Suggested request:
 
 ## Current conclusions and open questions
 
-Phases 1 and 2 are closed as basic feasibility explorations at the requester's direction. [Phase-2 evidence and closeout](phase-2-audio-capture.md) include E1/E2 checks and the **user-accepted E5**: Ctrl+Q inside Pi/Herdr, user-ended recording without a configured duration cap, finalized mono/16-kHz/s16le WAV, then full-large-v3/Vulkan batch transcription. The requester recorded `/voice-test pass`; audio deletion and process cleanup were reviewed. E3/E4 are not required. General phases 3–4 have not started; the passed smoke test does not authorize broader investigation, another recording/inference, or production implementation.
+Phases 1 and 2 are closed as basic feasibility explorations at the requester's direction. [Phase-2 evidence and closeout](phase-2-audio-capture.md) include E1/E2 checks and the **user-accepted E5**: Ctrl+Q inside Pi/Herdr, user-ended recording without a configured duration cap, finalized mono/16-kHz/s16le WAV, then full-large-v3/Vulkan batch transcription. The requester recorded `/voice-test pass`; audio deletion and process cleanup were reviewed. E3/E4 are not required. The requester subsequently completed and explicitly closed the lean combined phase-3/4 editor study: [source evidence, 21/21 synthetic checks, confirmed decisions and deferred validation](phase-3-transcription-and-editor.md). The passed E5 smoke test and this editor study do not authorize another recording/inference or production implementation.
 
 - **Primary environment:** Pi inside Herdr, with release-capable outer terminal input. Native-only WezTerm tests are controls, not acceptance of a different target.
 - **Pi API:** Pi 1.4.0 exposes `ctx.ui.onTerminalInput` before editor release filtering, with public event-type helpers. `registerShortcut()` alone does not separate press/release. See [phase-1-keybindings.md](phase-1-keybindings.md). All 11 parser/dispatch assertion groups, 10 diagnostic harness checks, and 4 synthetic real-Pi startup checks passed. A subsequent physical Pi listener trial also passed in updated Herdr, as recorded below.
@@ -123,6 +123,6 @@ Phases 1 and 2 are closed as basic feasibility explorations at the requester's d
 
 **Basic phase-1 feasibility is verified:** WezTerm with Kitty enabled → Herdr 0.9.5 → Pi → extension raw-input listener. Full result/provenance and untested cases are in [phase-1-herdr-0.9.5.md](phase-1-herdr-0.9.5.md). No further repetition of the basic gesture is needed.
 
-**Current handoff (2026-10-26):** use [NEXT-PHASE-HANDOFF.md](NEXT-PHASE-HANDOFF.md) for the accepted phase-2 summary, the recommendation to combine original phases 3–4, and the ready-to-paste next-session prompt. [phase-2-audio-capture.md](phase-2-audio-capture.md) and [E5 evidence/accepted verdict](assets/phase-2-audio-capture/e5/README.md) retain the detailed closeout. Keep the spent E2/E5 authorization ledgers and evidence. No extra capture, replay, inference retry, production extension or phase transition is automatic. The requester must select the next scope/session; no further E3/E4 battery is required. [HANDOFF.md](HANDOFF.md) remains the historical phase-1 closeout.
+**Current closeout/handoff:** [phase-3-transcription-and-editor.md](phase-3-transcription-and-editor.md) records the closed combined editor/lifecycle study and next-session boundaries, current-cursor delivery, 21/21 synthetic checks, confirmed native-paste/manual-spacing decisions and additional lifecycle/UI validations deferred by the requester to use after implementation. Those unperformed checks are not plan-closing gates and are not marked passed. [NEXT-PHASE-HANDOFF.md](NEXT-PHASE-HANDOFF.md) remains the phase-2-to-3 handoff and accepted phase-2 summary; its “not started” language predates this study. [phase-2-audio-capture.md](phase-2-audio-capture.md) and [E5 evidence/accepted verdict](assets/phase-2-audio-capture/e5/README.md) retain the detailed closeout. Keep the spent E2/E5 authorization ledgers and evidence. No extra capture, replay, inference retry, production extension or phase transition is automatic. The requester must select the next scope/session; no further E3/E4 battery is required. [HANDOFF.md](HANDOFF.md) remains the historical phase-1 closeout.
 
 Historical source/terminal traces remain in [protocol diagnosis](phase-1-protocol-diagnosis.md) and [Herdr source investigation](phase-1-herdr-input.md). Only public source, local executable metadata/version, user-supplied reports, and isolated local diagnostic processes were examined. No private Herdr service/runtime or remote host was inspected or connected by the assistant. Additional settings changes, software updates, or private/remote access require explicit authorization.

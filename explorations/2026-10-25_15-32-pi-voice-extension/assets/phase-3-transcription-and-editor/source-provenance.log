@@ -1,0 +1,11 @@
+2026-10-26T17:57:00-03:00
+v24.16.0
+@earendil-works/pi-coding-agent 1.4.0
+@earendil-works/pi-tui 1.4.0
+c5038d9410cfb13f5be391f46f13de338bc46ab4c9a7d064f7b962c0dc4a807c  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/core/extensions/types.d.ts
+633000038a8a9c60111fc9b32481c4015285fe530685277068bc5ed74f77dafa  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/modes/interactive/interactive-mode.js
+000b0056f2bf645537537468bdd6f6ee0c82e4110f5417c1c70c2e8fefc04f29  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/modes/interactive/components/custom-editor.js
+838ebf6af4d1b0161959a0914c59aa65b0537b099fb358402356a51894db8075  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-tui/dist/components/editor.js
+928b6528bb17d26273af8f7023a4f98e5f440d5896a4280d060b9b3e1f9a6882  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/core/agent-session-runtime.js
+436e8be3bbab2db475ce30bb5d0bb30f0046b19a3476f8cd57b8133e68891162  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/core/agent-session.js
+0e659fb4338069d91c4d0a3b032b51bf8d179a99e6417bc3e39e59b672aaec76  /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-coding-agent/dist/core/extensions/runner.js

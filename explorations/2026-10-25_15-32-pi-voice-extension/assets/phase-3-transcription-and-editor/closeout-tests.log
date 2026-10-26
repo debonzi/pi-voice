@@ -1,0 +1,29 @@
+✔ empty prompt: actual UI paste inserts, positions cursor and never submits (3.536485ms)
+✔ asynchronous paste needs rendering feedback; actual setStatus requests it (0.251387ms)
+✔ append after typing preserves existing prefix (0.482462ms)
+✔ middle insertion preserves prefix and suffix (0.951413ms)
+✔ start insertion preserves entire old prompt (0.228413ms)
+✔ async result uses cursor at delivery and preserves intervening typing (0.968183ms)
+✔ successive parts plus typing need no submission between them (0.764165ms)
+✔ multiline result inserts literally, normalizes CRLF/tabs, no submission (0.245546ms)
+✔ single undo removes the entire dictated part only (0.603211ms)
+✔ successive parts are separate undo units (0.266459ms)
+✔ Unicode movement is delegated to editor grapheme handling (11.228547ms)
+✔ paste does not add general word spacing automatically (0.341793ms)
+✔ paste has a path-prefix spacing heuristic (not literal insertion) (0.134902ms)
+✔ 1000 characters remain inline; 1001 collapse without losing expanded text (0.377372ms)
+✔ 10 lines remain inline; 11 collapse even below character threshold (0.188037ms)
+✔ collapsed marker is an atomic cursor unit, not inline editable transcript (0.640211ms)
+✔ explicit setEditorText(expanded) expands marker but puts cursor at end (0.216968ms)
+✔ public CustomEditor method inserts long text inline, atomically, no submit (0.190509ms)
+✔ public UI has no cursor access; replacing editor redirects UI paste (0.119353ms)
+✔ bracketed paste cancels pending character-jump mode and still inserts (0.172428ms)
+✔ safe payload admission rejects embedded paste-end/control sequences (0.342356ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 465.67189
