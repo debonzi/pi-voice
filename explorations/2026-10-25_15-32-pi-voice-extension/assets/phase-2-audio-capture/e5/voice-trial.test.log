@@ -1,0 +1,24 @@
+✔ factory/startup are process-free; non-TUI startup installs no listener (1.034623ms)
+✔ first nonrepeat press only, ordinary/Kitty repeats ignored, changed-modifier Q release stops once (2.769668ms)
+✔ release/cancel reentering during spawn are queued after start, never dropped (0.581615ms)
+✔ legacy Ctrl+Q duplicates do not toggle; explicit stop handles absent release (0.298513ms)
+✔ full transcript stays hidden until finished AND successful close, then scrollable memory viewer (9.926461ms)
+✔ busy/editor-in-use avoids auto-opening; manual view remains available (1.546964ms)
+✔ nonzero/signal/missing finished/protocol failure never reveal buffered transcript or enable verdict (2.599157ms)
+✔ spawn and control pipe errors are handled; single attempt remains consumed (0.446348ms)
+✔ shutdown sends cancel+EOF and awaits worker close before removing listener/UI (0.694881ms)
+✔ shutdown reentering during spawn still queues start/cancel/EOF and waits (0.293292ms)
+✔ stdout/stderr errors cancel cleanly, discard raw stderr and never expose failed text (0.479693ms)
+✔ Escape and explicit cancel are idempotent; worker-cancelled outcome is not success (0.313658ms)
+✔ idle cancellation disarms without spawning; no reset/retry command (0.117305ms)
+✔ cleanup-only watchdog warns without kill; transcribing is not a recording/inference timer (77.324856ms)
+✔ ordinary input/user_bash blocked, cache warming disabled, session-switch/fork blocked (0.411559ms)
+✔ real verdict writer creates ONLY exclusive 0600 metadata; rejects traversal/symlink/nonprivate paths (2.882117ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 360.611581

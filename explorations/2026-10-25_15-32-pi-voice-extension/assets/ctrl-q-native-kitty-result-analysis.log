@@ -1,0 +1,4 @@
+{"sequence":"\"\\u001b[113;133u\"","count":68,"key":"ctrl+q","isRelease":false,"isRepeat":false,"modifiers":132}
+{"sequence":"\"\\u001b[113;133:3u\"","count":1,"key":"ctrl+q","isRelease":true,"isRepeat":false,"modifiers":132}
+PASS: native Kitty-enabled physical report includes one Q release; installed Pi TUI recognizes Ctrl+Q for both press and release despite NumLock bit 128.
+Limit: recorded terminal sequences parsed independently; physical Pi extension dispatch in that native configuration is not yet tested.

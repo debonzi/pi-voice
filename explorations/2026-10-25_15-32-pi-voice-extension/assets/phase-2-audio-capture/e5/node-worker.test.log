@@ -1,0 +1,17 @@
+TAP version 13
+# Node worker bridge evidence: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-node-7tPkgO
+# Subtest: Node socket-backed stdio can start/stop the actual synthetic worker and receive one completed batch result
+ok 1 - Node socket-backed stdio can start/stop the actual synthetic worker and receive one completed batch result
+  ---
+  duration_ms: 96.794165
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 137.134721

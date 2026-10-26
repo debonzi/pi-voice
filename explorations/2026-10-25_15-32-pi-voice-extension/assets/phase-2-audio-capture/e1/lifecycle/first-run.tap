@@ -1,0 +1,23 @@
+✔ stop before deferred spawn creates no child or file (4.662404ms)
+✔ repeated starts and stops settle once; consumed ready WAV is deleted (36.208166ms)
+✔ stop during STARTING never becomes RECORDING and discards zero-frame fixture (35.507324ms)
+✔ cancel during starting discards; late ready cannot resurrect recording (35.300148ms)
+✔ cancel during recording deletes completed bytes instead of publishing (34.916718ms)
+✔ cancel during finalization wins and start is not queued (113.721532ms)
+✔ unexpected failure exit 1 with valid bytes never publishes (32.35859ms)
+✔ spawn ENOENT settles exactly once without a file (5.700274ms)
+✔ startup deadline cancels instead of simulating release/speech end (210.724079ms)
+✔ ignored SIGINT escalates to SIGTERM and discards even valid bytes (196.035392ms)
+✔ ignored graceful signals escalate to SIGKILL; partial file is deleted (341.954512ms)
+✔ stale callback cannot mutate a new operation (73.539323ms)
+✔ stdout/stderr flood is drained with bounded retained diagnostics (29.451054ms)
+✔ disposable owner SIGKILL closes private pipe; supervisor stops/reaps fake (99.496707ms)
+E1 lifecycle evidence: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/lifecycle/run-0DNPNH
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5192.953111

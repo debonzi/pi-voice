@@ -1,0 +1,3 @@
+# Raw terminal captures contain control bytes, CRLF and meaningful screen padding.
+# Preserve the recorded bytes; do not treat them as editable source text.
+*.ansi.log binary

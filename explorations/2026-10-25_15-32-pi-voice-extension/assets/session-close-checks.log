@@ -1,0 +1,30 @@
+Closure checks: keyboard exploration only; no microphone or service access
+Node: v24.16.0
+Pi TUI under test: /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-tui
+PASS 1: Kitty Ctrl+Shift+R identity matches press, repeat, and release
+PASS 2: repeat/release helpers distinguish event types separately from identity
+PASS 3: legacy Ctrl+R has no Shift identity or release information
+PASS 4: modifyOtherKeys distinguishes Ctrl+Shift+R but reports no release
+PASS 5: R release after modifier changes no longer matches the activation chord
+PASS 6: bracketed paste is not classified as repeat/release
+PASS 7: stdin buffer reconstructs split sequences and separates batched events
+PASS 8: raw listener sees releases before default focused-component filtering
+PASS 9: a component can opt in to releases
+PASS 10: raw listener can consume owned input without delivering it to editor
+PASS 11: Kitty negotiation parser retains flags, not just protocol presence
+Result: 11/11 assertion groups passed.
+Limit: synthetic events and dispatch harness only; no actual terminal validation.
+PASS 1: factory registers only hooks/command, without installing a listener
+PASS 2: interactive startup arms one listener and shows the diagnostic
+PASS 3: unrelated input and bracketed paste pass through without changing the display
+PASS 4: press/repeat/release are consumed and counted separately
+PASS 5: Q release after Ctrl changes is recognized only after activation
+PASS 6: legacy Ctrl+Q is visible but never invents a release event
+PASS 7: Escape manually stops without incrementing the release count
+PASS 8: reset/result/stop commands work; invalid command leaves listener state alone
+PASS 9: submitted prompts are handled locally rather than starting a model request
+PASS 10: replacement/startup and shutdown do not leak listeners
+Result: 10/10 synthetic diagnostic checks passed.
+No physical key events, microphone access, or network/service connections tested.
+PASS: flags/DA, legacy counts, split Kitty events, changed modifiers, modifyOtherKeys, privacy/paste, abort, partial flags
+PASS: launcher shell syntax

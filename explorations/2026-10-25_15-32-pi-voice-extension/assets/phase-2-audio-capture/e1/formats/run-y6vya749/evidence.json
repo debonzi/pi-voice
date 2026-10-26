@@ -1,0 +1,3462 @@
+{
+  "experiment": "E1 synthetic-only chunk-aware WAV format validation",
+  "run_directory": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749",
+  "python": "3.13.0 (main, Dec  5 2024, 23:13:10) [GCC 13.2.0]",
+  "ffprobe_path": "/usr/bin/ffprobe",
+  "short_guard_frames": 3200,
+  "summary": {
+    "fixtures": 47,
+    "assertions": 216,
+    "assertions_passed": 216,
+    "assertions_failed": 0,
+    "failures": [],
+    "validator_verdict_counts": {
+      "invalid": 34,
+      "no-audio": 1,
+      "too-short": 3,
+      "accepted": 9
+    },
+    "ffprobe_exit_counts": {
+      "1": 13,
+      "0": 34
+    },
+    "invalid_but_ffprobe_exit_zero": [
+      "truncated-data-raw",
+      "truncated-data-repaired-riff",
+      "stale-riff-zero-length",
+      "stale-riff-too-large",
+      "stale-data-too-large",
+      "stale-data-zero-length",
+      "odd-data-misaligned-padded",
+      "missing-final-odd-padding",
+      "wrong-encoding-float",
+      "wrong-channels-stereo",
+      "wrong-rate-48000",
+      "wrong-bits-8",
+      "wrong-block-align",
+      "wrong-byte-rate",
+      "zero-align",
+      "fmt-extension-nonzero",
+      "duplicate-fmt",
+      "duplicate-data",
+      "max-chunk-length",
+      "trailing-undeclared-bytes",
+      "riff-consistent-trailing-fragment"
+    ],
+    "invalid_but_ffprobe_exit_zero_with_stream": [
+      "truncated-data-raw",
+      "truncated-data-repaired-riff",
+      "stale-riff-zero-length",
+      "stale-riff-too-large",
+      "stale-data-too-large",
+      "stale-data-zero-length",
+      "odd-data-misaligned-padded",
+      "missing-final-odd-padding",
+      "wrong-encoding-float",
+      "wrong-channels-stereo",
+      "wrong-rate-48000",
+      "wrong-bits-8",
+      "wrong-block-align",
+      "wrong-byte-rate",
+      "zero-align",
+      "fmt-extension-nonzero",
+      "duplicate-fmt",
+      "duplicate-data",
+      "max-chunk-length",
+      "trailing-undeclared-bytes",
+      "riff-consistent-trailing-fragment"
+    ],
+    "elapsed_seconds": 1.57
+  },
+  "assertions": [
+    {
+      "label": "run-directory-mode-0700",
+      "passed": true
+    },
+    {
+      "label": "empty-file:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "empty-file:verdict",
+      "passed": true
+    },
+    {
+      "label": "empty-file:reason",
+      "passed": true
+    },
+    {
+      "label": "empty-file:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:verdict",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:frames",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "header-only-zero-frames:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:verdict",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:frames",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "tiny-one-frame:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:verdict",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:frames",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "tiny-10ms:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:verdict",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:frames",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "boundary-just-under-200ms:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:verdict",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:frames",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "boundary-exactly-200ms:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:verdict",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:frames",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "ordinary-250ms:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:verdict",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:frames",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "ordinary-1s:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:verdict",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:frames",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "silent-250ms:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:verdict",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:frames",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:not-fixed-44-header",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-before-fmt:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:verdict",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:frames",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-nonzero-pad:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:verdict",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:frames",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "odd-junk-after-data:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:verdict",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:frames",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "multiple-unknown-chunks:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:verdict",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:frames",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:probe-exit",
+      "passed": true
+    },
+    {
+      "label": "pcm-fmt18-zero-extension:probe-pcm-metadata",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-raw:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-raw:verdict",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-raw:reason",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-raw:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-repaired-riff:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-repaired-riff:verdict",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-repaired-riff:reason",
+      "passed": true
+    },
+    {
+      "label": "truncated-data-repaired-riff:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "truncated-chunk-header:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "truncated-chunk-header:verdict",
+      "passed": true
+    },
+    {
+      "label": "truncated-chunk-header:reason",
+      "passed": true
+    },
+    {
+      "label": "truncated-chunk-header:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "truncated-riff-header:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "truncated-riff-header:verdict",
+      "passed": true
+    },
+    {
+      "label": "truncated-riff-header:reason",
+      "passed": true
+    },
+    {
+      "label": "truncated-riff-header:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-zero-length:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-zero-length:verdict",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-zero-length:reason",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-zero-length:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-too-large:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-too-large:verdict",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-too-large:reason",
+      "passed": true
+    },
+    {
+      "label": "stale-riff-too-large:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "stale-data-too-large:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "stale-data-too-large:verdict",
+      "passed": true
+    },
+    {
+      "label": "stale-data-too-large:reason",
+      "passed": true
+    },
+    {
+      "label": "stale-data-too-large:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "stale-data-zero-length:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "stale-data-zero-length:verdict",
+      "passed": true
+    },
+    {
+      "label": "stale-data-zero-length:reason",
+      "passed": true
+    },
+    {
+      "label": "stale-data-zero-length:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "odd-data-misaligned-padded:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "odd-data-misaligned-padded:verdict",
+      "passed": true
+    },
+    {
+      "label": "odd-data-misaligned-padded:reason",
+      "passed": true
+    },
+    {
+      "label": "odd-data-misaligned-padded:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "missing-final-odd-padding:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "missing-final-odd-padding:verdict",
+      "passed": true
+    },
+    {
+      "label": "missing-final-odd-padding:reason",
+      "passed": true
+    },
+    {
+      "label": "missing-final-odd-padding:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "missing-internal-odd-padding:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "missing-internal-odd-padding:verdict",
+      "passed": true
+    },
+    {
+      "label": "missing-internal-odd-padding:reason",
+      "passed": true
+    },
+    {
+      "label": "missing-internal-odd-padding:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-encoding-float:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-encoding-float:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-encoding-float:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-encoding-float:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-channels-stereo:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-channels-stereo:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-channels-stereo:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-channels-stereo:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-rate-48000:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-rate-48000:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-rate-48000:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-rate-48000:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-bits-8:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-bits-8:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-bits-8:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-bits-8:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-block-align:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-block-align:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-block-align:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-block-align:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "wrong-byte-rate:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "wrong-byte-rate:verdict",
+      "passed": true
+    },
+    {
+      "label": "wrong-byte-rate:reason",
+      "passed": true
+    },
+    {
+      "label": "wrong-byte-rate:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "zero-rate:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "zero-rate:verdict",
+      "passed": true
+    },
+    {
+      "label": "zero-rate:reason",
+      "passed": true
+    },
+    {
+      "label": "zero-rate:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "zero-channels:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "zero-channels:verdict",
+      "passed": true
+    },
+    {
+      "label": "zero-channels:reason",
+      "passed": true
+    },
+    {
+      "label": "zero-channels:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "zero-align:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "zero-align:verdict",
+      "passed": true
+    },
+    {
+      "label": "zero-align:reason",
+      "passed": true
+    },
+    {
+      "label": "zero-align:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "fmt-extension-nonzero:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "fmt-extension-nonzero:verdict",
+      "passed": true
+    },
+    {
+      "label": "fmt-extension-nonzero:reason",
+      "passed": true
+    },
+    {
+      "label": "fmt-extension-nonzero:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "missing-fmt:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "missing-fmt:verdict",
+      "passed": true
+    },
+    {
+      "label": "missing-fmt:reason",
+      "passed": true
+    },
+    {
+      "label": "missing-fmt:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "missing-data:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "missing-data:verdict",
+      "passed": true
+    },
+    {
+      "label": "missing-data:reason",
+      "passed": true
+    },
+    {
+      "label": "missing-data:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "duplicate-fmt:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "duplicate-fmt:verdict",
+      "passed": true
+    },
+    {
+      "label": "duplicate-fmt:reason",
+      "passed": true
+    },
+    {
+      "label": "duplicate-fmt:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "duplicate-data:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "duplicate-data:verdict",
+      "passed": true
+    },
+    {
+      "label": "duplicate-data:reason",
+      "passed": true
+    },
+    {
+      "label": "duplicate-data:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "short-fmt:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "short-fmt:verdict",
+      "passed": true
+    },
+    {
+      "label": "short-fmt:reason",
+      "passed": true
+    },
+    {
+      "label": "short-fmt:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "not-wave:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "not-wave:verdict",
+      "passed": true
+    },
+    {
+      "label": "not-wave:reason",
+      "passed": true
+    },
+    {
+      "label": "not-wave:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "big-endian-rifx:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "big-endian-rifx:verdict",
+      "passed": true
+    },
+    {
+      "label": "big-endian-rifx:reason",
+      "passed": true
+    },
+    {
+      "label": "big-endian-rifx:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "arbitrary-garbage:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "arbitrary-garbage:verdict",
+      "passed": true
+    },
+    {
+      "label": "arbitrary-garbage:reason",
+      "passed": true
+    },
+    {
+      "label": "arbitrary-garbage:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "max-chunk-length:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "max-chunk-length:verdict",
+      "passed": true
+    },
+    {
+      "label": "max-chunk-length:reason",
+      "passed": true
+    },
+    {
+      "label": "max-chunk-length:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "trailing-undeclared-bytes:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "trailing-undeclared-bytes:verdict",
+      "passed": true
+    },
+    {
+      "label": "trailing-undeclared-bytes:reason",
+      "passed": true
+    },
+    {
+      "label": "trailing-undeclared-bytes:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "riff-consistent-trailing-fragment:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "riff-consistent-trailing-fragment:verdict",
+      "passed": true
+    },
+    {
+      "label": "riff-consistent-trailing-fragment:reason",
+      "passed": true
+    },
+    {
+      "label": "riff-consistent-trailing-fragment:probe-bounded-completion",
+      "passed": true
+    },
+    {
+      "label": "empty-riff-wave:mode-0600",
+      "passed": true
+    },
+    {
+      "label": "empty-riff-wave:verdict",
+      "passed": true
+    },
+    {
+      "label": "empty-riff-wave:reason",
+      "passed": true
+    },
+    {
+      "label": "empty-riff-wave:probe-bounded-completion",
+      "passed": true
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "empty-file",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-file.wav",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "truncated-riff-header",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "truncated-riff-header"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-file.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-file.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "header-only-zero-frames",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/header-only-zero-frames.wav",
+      "bytes": 44,
+      "sha256": "ba584a378b11d9e9c98736fd8c256fe1453a84ee4139416d24b07acff424f0fb",
+      "expected": {
+        "verdict": "no-audio",
+        "frames": 0,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "no-audio",
+        "frames": 0,
+        "duration_seconds": 0.0,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 0
+          }
+        ],
+        "reason": "zero-frames"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/header-only-zero-frames.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"size\": \"44\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "size": "44"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "tiny-one-frame",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/tiny-one-frame.wav",
+      "bytes": 46,
+      "sha256": "6baa91c694a03f0819a096167e38ad47878fd3922ba93dfdbdf39b9bff5e456a",
+      "expected": {
+        "verdict": "too-short",
+        "frames": 1,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "too-short",
+        "frames": 1,
+        "duration_seconds": 6.25e-05,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 2
+          }
+        ],
+        "reason": "under-200ms"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/tiny-one-frame.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.000063\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.000063\",\n        \"size\": \"46\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.000063"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.000063",
+            "size": "46"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "tiny-10ms",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/tiny-10ms.wav",
+      "bytes": 364,
+      "sha256": "3c0cd431c691442650595ef154bcf5ef019339a88e4db195a3ddbbe68e7b2438",
+      "expected": {
+        "verdict": "too-short",
+        "frames": 160,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "too-short",
+        "frames": 160,
+        "duration_seconds": 0.01,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 320
+          }
+        ],
+        "reason": "under-200ms"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/tiny-10ms.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.010000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.010000\",\n        \"size\": \"364\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.010000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.010000",
+            "size": "364"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "boundary-just-under-200ms",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/boundary-just-under-200ms.wav",
+      "bytes": 6442,
+      "sha256": "9cd2a0f55c35decfb26b3335fc363e2d5258f30fc624c91717e0f07fa80b602b",
+      "expected": {
+        "verdict": "too-short",
+        "frames": 3199,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "too-short",
+        "frames": 3199,
+        "duration_seconds": 0.1999375,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 6398
+          }
+        ],
+        "reason": "under-200ms"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/boundary-just-under-200ms.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.199938\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.199938\",\n        \"size\": \"6442\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.199938"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.199938",
+            "size": "6442"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "boundary-exactly-200ms",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/boundary-exactly-200ms.wav",
+      "bytes": 6444,
+      "sha256": "f96a3179955bc277cbd623de21412a8c7fdb1d5780fab99b878d33bb6720173d",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 3200,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 3200,
+        "duration_seconds": 0.2,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 6400
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/boundary-exactly-200ms.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.200000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.200000\",\n        \"size\": \"6444\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.200000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.200000",
+            "size": "6444"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "ordinary-250ms",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/ordinary-250ms.wav",
+      "bytes": 8044,
+      "sha256": "acb9850b9478a8c59dfc638905a094fd78d796f5d6eebae17c9fae8f1869bb9e",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 8000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/ordinary-250ms.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "ordinary-1s",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/ordinary-1s.wav",
+      "bytes": 32044,
+      "sha256": "6e32900c4adcff01e418d5cecfb3edbc6f115f668d9e82a6798fc3a14f93f0be",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 16000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 16000,
+        "duration_seconds": 1.0,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 32000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/ordinary-1s.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"1.000000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"1.000000\",\n        \"size\": \"32044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "1.000000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "1.000000",
+            "size": "32044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "silent-250ms",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/silent-250ms.wav",
+      "bytes": 8044,
+      "sha256": "59460d5690616336b990fc7b1629428e3bd825e422da84469d2c8c8ecfaff43b",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 8000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/silent-250ms.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "odd-junk-before-fmt",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-before-fmt.wav",
+      "bytes": 8056,
+      "sha256": "10b18e5ff5c45aef3eae979272b25ef94c4eb90806df3e1f6618065b15c824ee",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 56,
+        "chunks": [
+          {
+            "id_hex": "4a554e4b",
+            "offset": 12,
+            "size": 3
+          },
+          {
+            "id_hex": "666d7420",
+            "offset": 24,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 48,
+            "size": 8000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-before-fmt.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8056\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8056"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "odd-junk-nonzero-pad",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-nonzero-pad.wav",
+      "bytes": 8056,
+      "sha256": "38dabc8553e210d6654aa6eed6b1be3cb519fc7c71f37cb77adf89e9cc1ea228",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 56,
+        "chunks": [
+          {
+            "id_hex": "4a554e4b",
+            "offset": 12,
+            "size": 3
+          },
+          {
+            "id_hex": "666d7420",
+            "offset": 24,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 48,
+            "size": 8000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-nonzero-pad.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8056\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8056"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "odd-junk-after-data",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-after-data.wav",
+      "bytes": 8054,
+      "sha256": "5508f16574caa70c06ccaed51ecde641f24fe5d51fffb0dd341f923273433362",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 44,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 36,
+            "size": 8000
+          },
+          {
+            "id_hex": "4a554e4b",
+            "offset": 8044,
+            "size": 1
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-junk-after-data.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8054\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8054"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "multiple-unknown-chunks",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/multiple-unknown-chunks.wav",
+      "bytes": 8078,
+      "sha256": "bb54bd22f4f84e3a1b7015fcabdcb3c5d0f7ac452c0bfd00b20c63e97e51cb50",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 66,
+        "chunks": [
+          {
+            "id_hex": "4a554e4b",
+            "offset": 12,
+            "size": 0
+          },
+          {
+            "id_hex": "61626364",
+            "offset": 20,
+            "size": 5
+          },
+          {
+            "id_hex": "666d7420",
+            "offset": 34,
+            "size": 16
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 58,
+            "size": 8000
+          },
+          {
+            "id_hex": "7461696c",
+            "offset": 8066,
+            "size": 3
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/multiple-unknown-chunks.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8078\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8078"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "pcm-fmt18-zero-extension",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/pcm-fmt18-zero-extension.wav",
+      "bytes": 8046,
+      "sha256": "1bf707d5f9f8384abbf701c12077aa8c04a4e6b51bdbfe3896b53b193bb25b03",
+      "expected": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "reason": null,
+        "probe_pcm": true
+      },
+      "validator": {
+        "verdict": "accepted",
+        "frames": 4000,
+        "duration_seconds": 0.25,
+        "data_offset": 46,
+        "chunks": [
+          {
+            "id_hex": "666d7420",
+            "offset": 12,
+            "size": 18
+          },
+          {
+            "id_hex": "64617461",
+            "offset": 38,
+            "size": 8000
+          }
+        ],
+        "reason": "valid-and-long-enough"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/pcm-fmt18-zero-extension.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8046\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8046"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "truncated-data-raw",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-data-raw.wav",
+      "bytes": 8027,
+      "sha256": "fdf4e31a9f5744e12b2d6f05242336a4fcae61ef58e2465fe62b5bc6669da4ea",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "riff-length-mismatch",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "riff-length-mismatch"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-data-raw.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.249500\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.249500\",\n        \"size\": \"8027\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.249500"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.249500",
+            "size": "8027"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "truncated-data-repaired-riff",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-data-repaired-riff.wav",
+      "bytes": 8027,
+      "sha256": "43d167f78803384417127d0937c120d4dd1635637607099388c6ec88c96f91d5",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "chunk-overrun",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "chunk-overrun"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-data-repaired-riff.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.249500\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.249500\",\n        \"size\": \"8027\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.249500"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.249500",
+            "size": "8027"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "truncated-chunk-header",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-chunk-header.wav",
+      "bytes": 42,
+      "sha256": "9115d4ea64a9523805e0dda0229d121f6b91e30a18f11975ee1c6914b751811d",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "truncated-chunk-header",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "truncated-chunk-header"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-chunk-header.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "[wav @ 0x5cee896c1bc0] no 'data' tag found\n/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-chunk-header.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "truncated-riff-header",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-riff-header.wav",
+      "bytes": 9,
+      "sha256": "ce26c10b9d7f0a9827fbcb33943c1289e29ddf4d7536c2ceba2a5a2d73179721",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "truncated-riff-header",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "truncated-riff-header"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-riff-header.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/truncated-riff-header.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "stale-riff-zero-length",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-riff-zero-length.wav",
+      "bytes": 8044,
+      "sha256": "897371b1dc8ec39c2b6486ea996605dcc346e9e2fec2e5265ff88feb9e83a091",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "riff-length-mismatch",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "riff-length-mismatch"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-riff-zero-length.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "stale-riff-too-large",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-riff-too-large.wav",
+      "bytes": 8044,
+      "sha256": "a7b862415752e96790fa35343683be11212f87fb15ff6d3ae2b002bb73f1dc80",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "riff-length-mismatch",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "riff-length-mismatch"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-riff-too-large.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "stale-data-too-large",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-data-too-large.wav",
+      "bytes": 8044,
+      "sha256": "05471699ec36a38fb15ab0d489d17f4992b1fee26c01897ac8c253fe096333ee",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "chunk-overrun",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "chunk-overrun"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-data-too-large.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "stale-data-zero-length",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-data-zero-length.wav",
+      "bytes": 8044,
+      "sha256": "1a3cf27f36cb547ae0c2ed1c84e394a269c8460d178fd6b30cb75cf25b4a5d3f",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "chunk-overrun",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "chunk-overrun"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/stale-data-zero-length.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "odd-data-misaligned-padded",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-data-misaligned-padded.wav",
+      "bytes": 78,
+      "sha256": "966fdb0920a6d0637e76a7576ebbc59c47de676d7bd74ca891f15c794dce6224",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "partial-pcm-frame",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "partial-pcm-frame"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/odd-data-misaligned-padded.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.001000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.001000\",\n        \"size\": \"78\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.001000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.001000",
+            "size": "78"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "missing-final-odd-padding",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-final-odd-padding.wav",
+      "bytes": 8055,
+      "sha256": "0a03a1545890c88255fb78fd404bd5ff3f74f67d7628429278a3b23be3295025",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "missing-chunk-padding",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "missing-chunk-padding"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-final-odd-padding.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8055\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8055"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "missing-internal-odd-padding",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-internal-odd-padding.wav",
+      "bytes": 8055,
+      "sha256": "ae1fcbf614abf75ea39d7c2edd3d786dc7a3e233870bcd2467c231b16f2847d1",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "chunk-overrun",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "chunk-overrun"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-internal-odd-padding.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "[wav @ 0x60b1c40e4bc0] no 'fmt ' or 'XMA2' tag found\n/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-internal-odd-padding.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-encoding-float",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-encoding-float.wav",
+      "bytes": 8044,
+      "sha256": "447678770662b64e1400f5a41aaacd0b7ff907ce7ad8f92ea252acde08dbe93b",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-encoding-float.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_type\": \"audio\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 0,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_type": "audio",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 0,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-channels-stereo",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-channels-stereo.wav",
+      "bytes": 8044,
+      "sha256": "83372f8c4d7d6a7d7c7af6dd8877d09b886b85aa591b8d8a19591295e43afea0",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-channels-stereo.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 2,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.125000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.125000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 2,
+              "bits_per_sample": 16,
+              "duration": "0.125000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.125000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-rate-48000",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-rate-48000.wav",
+      "bytes": 8044,
+      "sha256": "4ea19391ad60ba23fb8dc78c1020a2825e9fdd83ec0e3f0000b5d2220d734ed0",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-rate-48000.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"48000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.083333\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.083333\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "48000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.083333"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.083333",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-bits-8",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-bits-8.wav",
+      "bytes": 8044,
+      "sha256": "a0eeddc8b96e111da6db70b4be34d4b748c35317a1973033175124876a0c3b88",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-bits-8.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_u8\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"u8\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 8,\n            \"duration\": \"0.500000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.500000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_u8",
+              "codec_type": "audio",
+              "sample_fmt": "u8",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 8,
+              "duration": "0.500000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.500000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-block-align",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-block-align.wav",
+      "bytes": 8044,
+      "sha256": "df7eab291a2381baec1d7390dd1d2789e1e861e0857fc4609815f23b45b40665",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "inconsistent-pcm-rates",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "inconsistent-pcm-rates"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-block-align.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "wrong-byte-rate",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-byte-rate.wav",
+      "bytes": 8044,
+      "sha256": "cf014d8532d9f7c420f98298b8e61ccb5792283aa6d6e3b43c76d8f4dd1456f0",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "inconsistent-pcm-rates",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "inconsistent-pcm-rates"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/wrong-byte-rate.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "zero-rate",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-rate.wav",
+      "bytes": 8044,
+      "sha256": "c612ca8d3c507ac6705aee2c1fb7628582851f64fc9a7f1ff788a68a65092c40",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-rate.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "[wav @ 0x615df8f89bc0] Invalid sample rate: 0\n/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-rate.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "zero-channels",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-channels.wav",
+      "bytes": 8044,
+      "sha256": "a8f3bdecd3fd8ce8123a83d5123f30e0797511edac039117b44c4286b71ff230",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unexpected-pcm-format",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unexpected-pcm-format"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-channels.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n",
+        "stderr": "[pcm_s16le @ 0x568f97961680] Decoder requires channel layout to be set\n    Last message repeated 1 times\n[pcm_s16le @ 0x568f97963540] Decoder requires channel layout to be set\n",
+        "metadata": null,
+        "timeout": false
+      }
+    },
+    {
+      "name": "zero-align",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-align.wav",
+      "bytes": 8044,
+      "sha256": "9b106b25c9faba33f339262b17930ee74ce00ae4698813915ca0b567e2a8b068",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "inconsistent-pcm-rates",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "inconsistent-pcm-rates"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/zero-align.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8044\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8044"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "fmt-extension-nonzero",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/fmt-extension-nonzero.wav",
+      "bytes": 8046,
+      "sha256": "2c93e5b4f4e55f4f728c01fd908af65f3922b301747073406b3122655c259830",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unsupported-fmt-layout",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unsupported-fmt-layout"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/fmt-extension-nonzero.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8046\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8046"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "missing-fmt",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-fmt.wav",
+      "bytes": 8020,
+      "sha256": "90879470e4552d12bb43455a7a1a3d969c047a801f47d099b52e649b89b23a57",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "require-exactly-one-fmt-and-data",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "require-exactly-one-fmt-and-data"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-fmt.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "[wav @ 0x56938f49bbc0] no 'fmt ' or 'XMA2' tag found\n/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-fmt.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "missing-data",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-data.wav",
+      "bytes": 36,
+      "sha256": "04d9bddab64a8da67151c234322d72fb7e2207301cdafe8487e30dbcfeb9a332",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "require-exactly-one-fmt-and-data",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "require-exactly-one-fmt-and-data"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-data.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "[wav @ 0x5a6d7b0cdbc0] no 'data' tag found\n/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/missing-data.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "duplicate-fmt",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/duplicate-fmt.wav",
+      "bytes": 8068,
+      "sha256": "e9bcaaf409c5fe02c2f652a7ca35c809557065f2b19b0d4830b20c246adf6a72",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "require-exactly-one-fmt-and-data",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "require-exactly-one-fmt-and-data"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/duplicate-fmt.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8068\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8068"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "duplicate-data",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/duplicate-data.wav",
+      "bytes": 8052,
+      "sha256": "df1647a6ebcb4bd313180b648af4bbb4f423336d60776659725089e42ab5d1a7",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "require-exactly-one-fmt-and-data",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "require-exactly-one-fmt-and-data"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/duplicate-data.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.125000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.125000\",\n        \"size\": \"8052\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.125000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.125000",
+            "size": "8052"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "short-fmt",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/short-fmt.wav",
+      "bytes": 8036,
+      "sha256": "907c78ed334e11d3d31805e9fa792be03d6a1a99276195adfa10c586bec3e255",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "unsupported-fmt-layout",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "unsupported-fmt-layout"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/short-fmt.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/short-fmt.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "not-wave",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/not-wave.wav",
+      "bytes": 8044,
+      "sha256": "b0d98434eb2d60f267b187516cc19847034de8b955a6a814281e72361c1e1b89",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "not-riff-wave",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "not-riff-wave"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/not-wave.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/not-wave.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "big-endian-rifx",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/big-endian-rifx.wav",
+      "bytes": 8044,
+      "sha256": "bccf26e8489eeec1b43976d4afbba3204971d1a04d8bd53cf9c5add8bfc68fd2",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "not-riff-wave",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "not-riff-wave"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/big-endian-rifx.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/big-endian-rifx.wav: Not yet implemented in FFmpeg, patches welcome\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "arbitrary-garbage",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/arbitrary-garbage.wav",
+      "bytes": 64,
+      "sha256": "fdeab9acf3710362bd2658cdc9a29e8f9c757fcf9811603a8c447cd1d9151108",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "not-riff-wave",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "not-riff-wave"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/arbitrary-garbage.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/arbitrary-garbage.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    },
+    {
+      "name": "max-chunk-length",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/max-chunk-length.wav",
+      "bytes": 44,
+      "sha256": "10cae6d110c006f148431f081465de6b925627193fdf4254e3d3941f1f009e82",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "chunk-overrun",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "chunk-overrun"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/max-chunk-length.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"size\": \"44\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "size": "44"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "trailing-undeclared-bytes",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/trailing-undeclared-bytes.wav",
+      "bytes": 8051,
+      "sha256": "077e454d7a2b283c72bed03d61f61a5dde4529a63e2abae047e36332681c45d9",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "riff-length-mismatch",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "riff-length-mismatch"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/trailing-undeclared-bytes.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8051\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8051"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "riff-consistent-trailing-fragment",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/riff-consistent-trailing-fragment.wav",
+      "bytes": 8047,
+      "sha256": "e88e07b69192fded93d06f11a48a7bcc55ba565b90feb664339a45e3a98ca932",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "truncated-chunk-header",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "truncated-chunk-header"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/riff-consistent-trailing-fragment.wav"
+        ],
+        "returncode": 0,
+        "stdout": "{\n    \"programs\": [\n\n    ],\n    \"streams\": [\n        {\n            \"codec_name\": \"pcm_s16le\",\n            \"codec_type\": \"audio\",\n            \"sample_fmt\": \"s16\",\n            \"sample_rate\": \"16000\",\n            \"channels\": 1,\n            \"bits_per_sample\": 16,\n            \"duration\": \"0.250000\"\n        }\n    ],\n    \"format\": {\n        \"format_name\": \"wav\",\n        \"duration\": \"0.250000\",\n        \"size\": \"8047\"\n    }\n}\n",
+        "stderr": "",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "codec_type": "audio",
+              "sample_fmt": "s16",
+              "sample_rate": "16000",
+              "channels": 1,
+              "bits_per_sample": 16,
+              "duration": "0.250000"
+            }
+          ],
+          "format": {
+            "format_name": "wav",
+            "duration": "0.250000",
+            "size": "8047"
+          }
+        },
+        "timeout": false
+      }
+    },
+    {
+      "name": "empty-riff-wave",
+      "path": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-riff-wave.wav",
+      "bytes": 12,
+      "sha256": "1fe5a351bf0314c8a1840b023fd1e4cab3f0f123468940c241bd7bf20e989ab8",
+      "expected": {
+        "verdict": "invalid",
+        "frames": null,
+        "reason": "require-exactly-one-fmt-and-data",
+        "probe_pcm": false
+      },
+      "validator": {
+        "verdict": "invalid",
+        "reason": "require-exactly-one-fmt-and-data"
+      },
+      "ffprobe": {
+        "command": [
+          "/usr/bin/ffprobe",
+          "-v",
+          "error",
+          "-protocol_whitelist",
+          "file",
+          "-show_entries",
+          "stream=codec_type,codec_name,sample_fmt,sample_rate,channels,bits_per_sample,duration:format=format_name,duration,size",
+          "-of",
+          "json",
+          "-i",
+          "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-riff-wave.wav"
+        ],
+        "returncode": 1,
+        "stdout": "{\n\n}\n",
+        "stderr": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749/empty-riff-wave.wav: Invalid data found when processing input\n",
+        "metadata": {},
+        "timeout": false
+      }
+    }
+  ]
+}

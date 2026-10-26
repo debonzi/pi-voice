@@ -1,0 +1,115 @@
+{
+  "simulation": true,
+  "target": "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source",
+  "events": [
+    {
+      "event": "state",
+      "elapsed_s": 0.000204,
+      "state": "preflight"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.00022,
+      "state": "starting"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.032061,
+      "state": "recording"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.032214,
+      "state": "stopping"
+    },
+    {
+      "event": "termination-request",
+      "elapsed_s": 0.032225,
+      "phase": "capture",
+      "cancel": false,
+      "stop": true,
+      "failed": false
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.035745,
+      "state": "transcribing"
+    },
+    {
+      "event": "termination-request",
+      "elapsed_s": 0.06158,
+      "phase": "inference",
+      "cancel": false,
+      "stop": true,
+      "failed": true
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.062279,
+      "state": "cleaning"
+    }
+  ],
+  "children": [
+    {
+      "phase": "capture",
+      "pid": 1411935,
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/worker.py",
+        "--fake-capture",
+        "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-suite-oo1ufica/selftest-no-gpu-7p7_iieq/run-isn74hcr/capture.wav",
+        "normal"
+      ],
+      "signals": [
+        "SIGINT"
+      ],
+      "reaped": true,
+      "stream_active_s": 0.03108,
+      "owned_executable": "/usr/bin/python3.12",
+      "returncode": 1,
+      "lifetime_s": 0.034701,
+      "diagnostics": {
+        "stdout": "stream state changed unconnected -> connecting\nstream state changed paused -> streaming\n",
+        "stderr": ""
+      },
+      "stream_active": true
+    },
+    {
+      "phase": "inference",
+      "pid": 1411936,
+      "argv": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/worker.py",
+        "--fake-asr",
+        "no-gpu"
+      ],
+      "signals": [
+        "SIGTERM"
+      ],
+      "reaped": true,
+      "returncode": -15,
+      "lifetime_s": 0.025702
+    }
+  ],
+  "recording_duration_cap": null,
+  "vad": false,
+  "transcript_persisted": false,
+  "outcome": "error",
+  "audio_deleted": true,
+  "input": {
+    "simulation": true
+  },
+  "wav": {
+    "codec": "pcm_s16le",
+    "sample_rate": 16000,
+    "channels": 1,
+    "frames": 8000,
+    "duration_s": 0.5,
+    "bytes": 16044,
+    "data_offset": 44,
+    "mode": "0o600"
+  },
+  "error": "Selected Vulkan backend unavailable; no CPU/model retry"
+}

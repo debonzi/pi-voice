@@ -1,0 +1,134 @@
+TAP version 13
+# Node worker bridge evidence: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-node-vFo2lp
+# Subtest: Node socket-backed stdio can start/stop the actual synthetic worker and receive one completed batch result
+ok 1 - Node socket-backed stdio can start/stop the actual synthetic worker and receive one completed batch result
+  ---
+  duration_ms: 99.141327
+  type: 'test'
+  ...
+# Subtest: factory/startup are process-free; non-TUI startup installs no listener
+ok 2 - factory/startup are process-free; non-TUI startup installs no listener
+  ---
+  duration_ms: 1.114242
+  type: 'test'
+  ...
+# Subtest: first nonrepeat press only, ordinary/Kitty repeats ignored, changed-modifier Q release stops once
+ok 3 - first nonrepeat press only, ordinary/Kitty repeats ignored, changed-modifier Q release stops once
+  ---
+  duration_ms: 2.879645
+  type: 'test'
+  ...
+# Subtest: release/cancel reentering during spawn are queued after start, never dropped
+ok 4 - release/cancel reentering during spawn are queued after start, never dropped
+  ---
+  duration_ms: 0.62653
+  type: 'test'
+  ...
+# Subtest: legacy Ctrl+Q duplicates do not toggle; explicit stop handles absent release
+ok 5 - legacy Ctrl+Q duplicates do not toggle; explicit stop handles absent release
+  ---
+  duration_ms: 0.300125
+  type: 'test'
+  ...
+# Subtest: full transcript stays hidden until finished AND successful close, then scrollable memory viewer
+ok 6 - full transcript stays hidden until finished AND successful close, then scrollable memory viewer
+  ---
+  duration_ms: 10.599086
+  type: 'test'
+  ...
+# Subtest: busy/editor-in-use avoids auto-opening; manual view remains available
+ok 7 - busy/editor-in-use avoids auto-opening; manual view remains available
+  ---
+  duration_ms: 1.86175
+  type: 'test'
+  ...
+# Subtest: nonzero/signal/missing finished/protocol failure never reveal buffered transcript or enable verdict
+ok 8 - nonzero/signal/missing finished/protocol failure never reveal buffered transcript or enable verdict
+  ---
+  duration_ms: 1.307273
+  type: 'test'
+  ...
+# Subtest: spawn and control pipe errors are handled; single attempt remains consumed
+ok 9 - spawn and control pipe errors are handled; single attempt remains consumed
+  ---
+  duration_ms: 0.316047
+  type: 'test'
+  ...
+# Subtest: shutdown sends cancel+EOF and awaits worker close before removing listener/UI
+ok 10 - shutdown sends cancel+EOF and awaits worker close before removing listener/UI
+  ---
+  duration_ms: 0.683207
+  type: 'test'
+  ...
+# Subtest: shutdown reentering during spawn still queues start/cancel/EOF and waits
+ok 11 - shutdown reentering during spawn still queues start/cancel/EOF and waits
+  ---
+  duration_ms: 0.298511
+  type: 'test'
+  ...
+# Subtest: stdout/stderr errors cancel cleanly, discard raw stderr and never expose failed text
+ok 12 - stdout/stderr errors cancel cleanly, discard raw stderr and never expose failed text
+  ---
+  duration_ms: 0.465661
+  type: 'test'
+  ...
+# Subtest: Escape and explicit cancel are idempotent; worker-cancelled outcome is not success
+ok 13 - Escape and explicit cancel are idempotent; worker-cancelled outcome is not success
+  ---
+  duration_ms: 0.307982
+  type: 'test'
+  ...
+# Subtest: idle cancellation disarms without spawning; no reset/retry command
+ok 14 - idle cancellation disarms without spawning; no reset/retry command
+  ---
+  duration_ms: 0.139503
+  type: 'test'
+  ...
+# Subtest: cleanup-only watchdog warns without kill; transcribing is not a recording/inference timer
+ok 15 - cleanup-only watchdog warns without kill; transcribing is not a recording/inference timer
+  ---
+  duration_ms: 77.173546
+  type: 'test'
+  ...
+# Subtest: ordinary input/user_bash blocked, cache warming disabled, session-switch/fork blocked
+ok 16 - ordinary input/user_bash blocked, cache warming disabled, session-switch/fork blocked
+  ---
+  duration_ms: 0.432583
+  type: 'test'
+  ...
+# Subtest: real verdict writer creates ONLY exclusive 0600 metadata; rejects traversal/symlink/nonprivate paths
+ok 17 - real verdict writer creates ONLY exclusive 0600 metadata; rejects traversal/symlink/nonprivate paths
+  ---
+  duration_ms: 2.610625
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 370.633821
+Synthetic worker evidence: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-suite-oo1ufica
+test_active_recording_survives_prior_five_second_cap (__main__.WorkerChecks.test_active_recording_survives_prior_five_second_cap) ... ok
+test_cancel_during_batch_asr_reaps_both_and_suppresses_text (__main__.WorkerChecks.test_cancel_during_batch_asr_reaps_both_and_suppresses_text) ... ok
+test_cancel_while_recording_does_not_start_asr (__main__.WorkerChecks.test_cancel_while_recording_does_not_start_asr) ... ok
+test_no_gpu_is_error_without_cpu_or_model_retry (__main__.WorkerChecks.test_no_gpu_is_error_without_cpu_or_model_retry) ... ok
+test_normal_integrated_fake_capture_validation_asr_and_no_text_persistence (__main__.WorkerChecks.test_normal_integrated_fake_capture_validation_asr_and_no_text_persistence) ... ok
+test_one_shot_ledger_refuses_another_attempt (__main__.WorkerChecks.test_one_shot_ledger_refuses_another_attempt) ... ok
+test_owner_eof_discards_recording (__main__.WorkerChecks.test_owner_eof_discards_recording) ... ok
+test_owner_eof_during_asr_discards (__main__.WorkerChecks.test_owner_eof_during_asr_discards) ... ok
+test_regular_file_stdin_cannot_start_real_worker (__main__.WorkerChecks.test_regular_file_stdin_cannot_start_real_worker) ... ok
+test_release_queued_before_worker_start_opens_no_recorder (__main__.WorkerChecks.test_release_queued_before_worker_start_opens_no_recorder) ... ok
+test_seek_validator_rejects_truncated_file (__main__.WorkerChecks.test_seek_validator_rejects_truncated_file) ... ok
+test_seek_validator_supports_long_sparse_wav_without_reading_pcm (__main__.WorkerChecks.test_seek_validator_supports_long_sparse_wav_without_reading_pcm) ... ok
+test_unlink_error_stays_error_even_when_cancelled (__main__.WorkerChecks.test_unlink_error_stays_error_even_when_cancelled) ... ok
+test_unresponsive_fake_escalates_and_deletes_partial_file (__main__.WorkerChecks.test_unresponsive_fake_escalates_and_deletes_partial_file) ... ok
+test_worker_sigterm_cancels_and_waits_for_owned_recorder (__main__.WorkerChecks.test_worker_sigterm_cancels_and_waits_for_owned_recorder) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 9.649s
+
+OK

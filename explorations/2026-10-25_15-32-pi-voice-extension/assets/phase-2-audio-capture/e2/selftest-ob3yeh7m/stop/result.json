@@ -1,0 +1,91 @@
+{
+  "simulation": true,
+  "target": null,
+  "pid": 1401287,
+  "events": [
+    {
+      "event": "spawned",
+      "elapsed_s": 0.000277,
+      "pid": 1401287
+    },
+    {
+      "event": "stream-active",
+      "elapsed_s": 0.024643
+    },
+    {
+      "event": "stop-requested",
+      "elapsed_s": 0.024759,
+      "intent": "stop"
+    },
+    {
+      "event": "signal",
+      "elapsed_s": 0.024783,
+      "signal": "SIGINT"
+    },
+    {
+      "event": "closed",
+      "elapsed_s": 0.030122,
+      "returncode": 1
+    }
+  ],
+  "diagnostics": {
+    "stdout": "stream state changed unconnected -> connecting\nstream state changed paused -> streaming\n",
+    "stderr": ""
+  },
+  "intent": "stop",
+  "fatal": false,
+  "escalated": false,
+  "stream_active": true,
+  "audio_deleted": true,
+  "child_reaped": true,
+  "argv": [
+    "/home/debonzi/.pyenv/versions/3.13.0/bin/python3",
+    "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e2/capture-trial.py",
+    "--fixture",
+    "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e2/selftest-ob3yeh7m/stop/capture.wav",
+    "normal"
+  ],
+  "owned_executable": "/home/debonzi/.pyenv/versions/3.13.0/bin/python3.13",
+  "returncode": 1,
+  "child_lifetime_s": 0.03012,
+  "wav_mode": "0o600",
+  "wav_size": 16044,
+  "wav": {
+    "verdict": "accepted",
+    "frames": 8000,
+    "duration_seconds": 0.5,
+    "data_offset": 44,
+    "chunks": [
+      {
+        "id_hex": "666d7420",
+        "offset": 12,
+        "size": 16
+      },
+      {
+        "id_hex": "64617461",
+        "offset": 36,
+        "size": 16000
+      }
+    ],
+    "reason": "valid-and-long-enough"
+  },
+  "ffprobe": {
+    "returncode": 0,
+    "stderr": "",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "pcm_s16le",
+          "sample_rate": "16000",
+          "channels": 1,
+          "bits_per_sample": 16
+        }
+      ],
+      "format": {
+        "duration": "0.500000"
+      }
+    }
+  },
+  "outcome": "completed-then-deleted"
+}

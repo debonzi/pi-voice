@@ -1,0 +1,21 @@
+{
+  "scope": "Standalone main-screen terminal path, not the existing Pi process",
+  "requested_flags": 7,
+  "terminal_program_env": "WezTerm",
+  "terminal_version_env": "20240203-110809-5046fc22",
+  "reported_flags": [
+    7
+  ],
+  "device_attributes_replies": 1,
+  "event_type_bit_acknowledged": true,
+  "q_events": [
+    {
+      "hex": "1b5b3131333b353a3175",
+      "encoding": "kitty",
+      "event": "press",
+      "modifiers": 4,
+      "count": 59
+    }
+  ],
+  "interrupted": false
+}

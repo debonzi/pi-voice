@@ -1,0 +1,1200 @@
+{
+  "node": "v24.16.0",
+  "scope": "E1 fake children only; no audio access",
+  "tests": [
+    {
+      "name": "stop before deferred spawn creates no child or file",
+      "passed": true
+    },
+    {
+      "name": "repeated starts and stops settle once; consumed ready WAV is deleted",
+      "passed": true
+    },
+    {
+      "name": "stop during STARTING never becomes RECORDING and discards zero-frame fixture",
+      "passed": true
+    },
+    {
+      "name": "cancel during starting discards; late ready cannot resurrect recording",
+      "passed": true
+    },
+    {
+      "name": "cancel during recording deletes completed bytes instead of publishing",
+      "passed": true
+    },
+    {
+      "name": "cancel during finalization wins and start is not queued",
+      "passed": true
+    },
+    {
+      "name": "unexpected failure exit 1 with valid bytes never publishes",
+      "passed": true
+    },
+    {
+      "name": "spawn ENOENT settles exactly once without a file",
+      "passed": true
+    },
+    {
+      "name": "startup deadline cancels instead of simulating release/speech end",
+      "passed": true
+    },
+    {
+      "name": "ignored SIGINT escalates to SIGTERM and discards even valid bytes",
+      "passed": true
+    },
+    {
+      "name": "ignored graceful signals escalate to SIGKILL; partial file is deleted",
+      "passed": true
+    },
+    {
+      "name": "stale callback cannot mutate a new operation",
+      "passed": true
+    },
+    {
+      "name": "stdout/stderr flood is drained with bounded retained diagnostics",
+      "passed": true
+    },
+    {
+      "name": "disposable owner SIGKILL closes private pipe; supervisor stops/reaps fake",
+      "passed": true
+    }
+  ],
+  "operations": [
+    {
+      "id": "0-1",
+      "pids": [],
+      "settled": 1,
+      "reason": "stopped-before-spawn",
+      "published": false,
+      "signals": [],
+      "closed": false
+    },
+    {
+      "id": "1-1",
+      "pids": [
+        1241792
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "ready",
+      "published": true,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "2-1",
+      "pids": [
+        1241803
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "empty-or-invalid",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "3-1",
+      "pids": [
+        1241814
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "discard",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "4-1",
+      "pids": [
+        1241826
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "discard",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "5-1",
+      "pids": [
+        1241837
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "discard",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "6-1",
+      "pids": [
+        1241848
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "failed",
+      "published": false,
+      "signals": [],
+      "closed": true
+    },
+    {
+      "id": "7-1",
+      "pids": [],
+      "code": -2,
+      "signal": null,
+      "settled": 1,
+      "reason": "failed",
+      "published": false,
+      "signals": [],
+      "closed": true
+    },
+    {
+      "id": "8-1",
+      "pids": [
+        1241860
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "discard",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "9-1",
+      "pids": [
+        1241871
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "failed",
+      "published": false,
+      "signals": [
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "closed": true
+    },
+    {
+      "id": "10-1",
+      "pids": [
+        1241882
+      ],
+      "code": null,
+      "signal": "SIGKILL",
+      "settled": 1,
+      "reason": "failed",
+      "published": false,
+      "signals": [
+        "SIGINT",
+        "SIGTERM",
+        "SIGKILL"
+      ],
+      "closed": true
+    },
+    {
+      "id": "11-1",
+      "pids": [
+        1241894
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "discard",
+      "published": false,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "11-2",
+      "pids": [
+        1241905
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "ready",
+      "published": true,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    },
+    {
+      "id": "12-1",
+      "pids": [
+        1241916
+      ],
+      "code": 1,
+      "signal": null,
+      "settled": 1,
+      "reason": "ready",
+      "published": true,
+      "signals": [
+        "SIGINT"
+      ],
+      "closed": true
+    }
+  ],
+  "traces": [
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 26.132315,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 26.189407,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 26.262349,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 29.050281,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 29.510873,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 29.517632,
+        "reason": "stopped-before-spawn"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 30.410789,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 33.102684
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 56.514303
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 57.472648,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "start-ignored",
+        "t": 60.57962
+      },
+      {
+        "op": 1,
+        "event": "start-ignored",
+        "t": 60.58209
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 60.584903,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 60.662964,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "start-ignored",
+        "t": 60.674846
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 63.523149,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 63.530319,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 65.303117,
+        "state": "READY"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 65.306935,
+        "reason": "ready"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 66.378766,
+        "state": "IDLE"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 66.629649,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 68.160282
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 96.279795
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 98.437891,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 98.453828,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "stale-or-late-ready",
+        "t": 98.463498
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 100.23983,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 100.244627,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 101.646051,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 101.881818,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 101.886738,
+        "reason": "empty-or-invalid"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 102.200588,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 107.710563
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 131.21959
+      },
+      {
+        "op": 1,
+        "event": "cancel",
+        "t": 134.428341
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 134.431224,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 134.449978,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "cancel",
+        "t": 134.462992
+      },
+      {
+        "op": 1,
+        "event": "stale-or-late-ready",
+        "t": 134.464218
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 135.844182,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 135.849244,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 136.954077,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 137.218019,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 137.22136,
+        "reason": "discard"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 137.637113,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 139.554019
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 163.948071
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 165.192405,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "cancel",
+        "t": 169.287603
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 169.289777,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 169.310588,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 170.738999,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 170.744199,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 171.848966,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 172.156068,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 172.171755,
+        "reason": "discard"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 172.778231,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 175.900037
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 197.433877
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 198.694683,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 202.790841,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 202.814843,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 204.277663,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 204.283313,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "start-ignored",
+        "t": 208.392228
+      },
+      {
+        "op": 1,
+        "event": "cancel",
+        "t": 208.395565
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 284.586366,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 285.615136,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 285.63339,
+        "reason": "discard"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 286.818707,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 290.345184
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 315.331019
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 316.878065,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 316.892935,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 318.014064,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 318.469542,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 318.474298,
+        "reason": "failed"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 319.178394,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "error",
+        "t": 322.681963,
+        "code": "ENOENT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 322.969231,
+        "code": -2,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 322.982222,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 324.136527,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 324.406446,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 324.419159,
+        "reason": "failed"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 325.03699,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 327.583965
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 356.732411
+      },
+      {
+        "op": 1,
+        "event": "startup-timeout",
+        "t": 527.145034
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 527.151264,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 527.200835,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 533.705951,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 533.716552,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 534.849514,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 535.269364,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 535.275604,
+        "reason": "discard"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 535.860706,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 539.216822
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 565.762564
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 566.964914,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 572.079931,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 572.105228,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 722.556336,
+        "signal": "SIGTERM"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 729.014116,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 729.035097,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 730.193101,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 730.923763,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 730.940328,
+        "reason": "failed"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 732.114205,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 735.017215
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 765.908531
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 767.152618,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 768.285248,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 768.312397,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 918.661946,
+        "signal": "SIGTERM"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 1068.088297,
+        "signal": "SIGKILL"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 1071.942913,
+        "code": null,
+        "signal": "SIGKILL"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1071.952446,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1073.059225,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1073.529884,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 1073.535047,
+        "reason": "failed"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1074.028075,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 1076.850313
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 1100.945486
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1102.24277,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "cancel",
+        "t": 1104.378608
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1104.379495,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 1104.393054,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 1105.556001,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1105.558161,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1106.65297,
+        "state": "CLEANING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1107.001348,
+        "state": "IDLE"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 1107.002477,
+        "reason": "discard"
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1107.021008,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "stale-or-late-ready",
+        "t": 1107.026284
+      },
+      {
+        "op": 2,
+        "event": "spawn",
+        "t": 1109.455124
+      },
+      {
+        "op": 2,
+        "event": "boot",
+        "t": 1138.338414
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1139.64187,
+        "state": "RECORDING"
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1142.725319,
+        "state": "STOPPING"
+      },
+      {
+        "op": 2,
+        "event": "signal",
+        "t": 1142.736568,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 2,
+        "event": "close",
+        "t": 1145.893557,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1145.896909,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1147.213862,
+        "state": "READY"
+      },
+      {
+        "op": 2,
+        "event": "settled",
+        "t": 1147.217668,
+        "reason": "ready"
+      },
+      {
+        "op": 2,
+        "event": "state",
+        "t": 1147.337811,
+        "state": "IDLE"
+      }
+    ],
+    [
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1147.524772,
+        "state": "STARTING"
+      },
+      {
+        "op": 1,
+        "event": "spawn",
+        "t": 1148.960253
+      },
+      {
+        "op": 1,
+        "event": "boot",
+        "t": 1170.746672
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1172.177364,
+        "state": "RECORDING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1172.212798,
+        "state": "STOPPING"
+      },
+      {
+        "op": 1,
+        "event": "signal",
+        "t": 1172.227395,
+        "signal": "SIGINT"
+      },
+      {
+        "op": 1,
+        "event": "close",
+        "t": 1175.060831,
+        "code": 1,
+        "signal": null
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1175.06525,
+        "state": "FINALIZING"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1176.478848,
+        "state": "READY"
+      },
+      {
+        "op": 1,
+        "event": "settled",
+        "t": 1176.481339,
+        "reason": "ready"
+      },
+      {
+        "op": 1,
+        "event": "state",
+        "t": 1176.799879,
+        "state": "IDLE"
+      }
+    ]
+  ],
+  "cleanup": "all directly owned fake children reaped; all operation WAVs removed"
+}

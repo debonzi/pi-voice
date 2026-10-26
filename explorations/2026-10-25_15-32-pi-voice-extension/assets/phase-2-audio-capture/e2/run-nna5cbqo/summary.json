@@ -1,0 +1,32 @@
+{
+  "trials": [
+    {
+      "trial": 1,
+      "action": "stop",
+      "outcome": "completed-then-deleted",
+      "intent": "stop",
+      "returncode": 1,
+      "deleted": true,
+      "reaped": true
+    },
+    {
+      "trial": 2,
+      "action": "cancel",
+      "outcome": "discarded",
+      "intent": "cancel-discard",
+      "returncode": 1,
+      "deleted": true,
+      "reaped": true
+    },
+    {
+      "trial": 3,
+      "action": "stop",
+      "outcome": "completed-then-deleted",
+      "intent": "stop",
+      "returncode": 1,
+      "deleted": true,
+      "reaped": true
+    }
+  ],
+  "authorization": "E2 only, maximum three attempts"
+}

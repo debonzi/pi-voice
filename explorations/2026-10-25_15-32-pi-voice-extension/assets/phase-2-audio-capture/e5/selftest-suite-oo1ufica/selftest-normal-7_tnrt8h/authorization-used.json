@@ -1,0 +1,6 @@
+{
+  "run": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-suite-oo1ufica/selftest-normal-7_tnrt8h/run-1w3_zfgi",
+  "max_attempts": 1,
+  "duration_cap": null,
+  "scope": "Ctrl+Q E5; one capture then one full-large-v3/Vulkan batch ASR; delete WAV; no retry"
+}

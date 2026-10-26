@@ -1,0 +1,3 @@
+{"count":58,"key":"ctrl+q","matchesCtrlQ":true,"isRepeat":false,"isRelease":false,"sequence":"\"\\u001b[113;5:1u\""}
+PASS: report acknowledges flags 7; all 58 recorded Q events independently parse as Ctrl+Q press, not repeat/release, in installed Pi TUI.
+Limit: only recorded Q sequences are checked; no raw trace of discarded/unknown keys exists.

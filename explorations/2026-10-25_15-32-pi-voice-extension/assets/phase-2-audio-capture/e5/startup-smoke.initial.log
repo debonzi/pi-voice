@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/startup-smoke.py", line 19, in <module>
+    assert not list(here.glob('run-*')), 'Real capture must not exist for preparation smoke'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Real capture must not exist for preparation smoke

@@ -1,0 +1,5 @@
+PASS: isolated Pi startup loaded the real diagnostic and displayed its widget
+PASS: synthetic legacy Ctrl+Q reached the real raw-input listener
+PASS: synthetic Kitty Q release reached the real raw-input listener
+PASS: /quit exited the isolated Pi process cleanly
+Limit: synthetic PTY injection; actual WezTerm event delivery remains untested.

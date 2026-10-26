@@ -1,0 +1,28 @@
+{
+  "scope": "Standalone main-screen terminal path, not the existing Pi process",
+  "requested_flags": 7,
+  "terminal_program_env": "herdr",
+  "terminal_version_env": "0.9.5",
+  "reported_flags": [
+    7
+  ],
+  "device_attributes_replies": 1,
+  "event_type_bit_acknowledged": true,
+  "q_events": [
+    {
+      "hex": "1b5b3131333b3575",
+      "encoding": "kitty",
+      "event": "press",
+      "modifiers": 4,
+      "count": 55
+    },
+    {
+      "hex": "1b5b3131333b353a3375",
+      "encoding": "kitty",
+      "event": "release",
+      "modifiers": 4,
+      "count": 1
+    }
+  ],
+  "interrupted": false
+}

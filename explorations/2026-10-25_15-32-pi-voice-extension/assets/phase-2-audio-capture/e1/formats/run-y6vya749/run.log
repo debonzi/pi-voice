@@ -1,0 +1,115 @@
+E1 synthetic WAV format checks
+run: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e1/formats/run-y6vya749
+{
+  "fixtures": 47,
+  "assertions": 216,
+  "assertions_passed": 216,
+  "assertions_failed": 0,
+  "failures": [],
+  "validator_verdict_counts": {
+    "invalid": 34,
+    "no-audio": 1,
+    "too-short": 3,
+    "accepted": 9
+  },
+  "ffprobe_exit_counts": {
+    "1": 13,
+    "0": 34
+  },
+  "invalid_but_ffprobe_exit_zero": [
+    "truncated-data-raw",
+    "truncated-data-repaired-riff",
+    "stale-riff-zero-length",
+    "stale-riff-too-large",
+    "stale-data-too-large",
+    "stale-data-zero-length",
+    "odd-data-misaligned-padded",
+    "missing-final-odd-padding",
+    "wrong-encoding-float",
+    "wrong-channels-stereo",
+    "wrong-rate-48000",
+    "wrong-bits-8",
+    "wrong-block-align",
+    "wrong-byte-rate",
+    "zero-align",
+    "fmt-extension-nonzero",
+    "duplicate-fmt",
+    "duplicate-data",
+    "max-chunk-length",
+    "trailing-undeclared-bytes",
+    "riff-consistent-trailing-fragment"
+  ],
+  "invalid_but_ffprobe_exit_zero_with_stream": [
+    "truncated-data-raw",
+    "truncated-data-repaired-riff",
+    "stale-riff-zero-length",
+    "stale-riff-too-large",
+    "stale-data-too-large",
+    "stale-data-zero-length",
+    "odd-data-misaligned-padded",
+    "missing-final-odd-padding",
+    "wrong-encoding-float",
+    "wrong-channels-stereo",
+    "wrong-rate-48000",
+    "wrong-bits-8",
+    "wrong-block-align",
+    "wrong-byte-rate",
+    "zero-align",
+    "fmt-extension-nonzero",
+    "duplicate-fmt",
+    "duplicate-data",
+    "max-chunk-length",
+    "trailing-undeclared-bytes",
+    "riff-consistent-trailing-fragment"
+  ],
+  "elapsed_seconds": 1.57
+}
+
+Per-fixture validator / ffprobe exit / audio stream count:
+empty-file: invalid (truncated-riff-header); ffprobe=1; streams=0
+header-only-zero-frames: no-audio (zero-frames); ffprobe=0; streams=1
+tiny-one-frame: too-short (under-200ms); ffprobe=0; streams=1
+tiny-10ms: too-short (under-200ms); ffprobe=0; streams=1
+boundary-just-under-200ms: too-short (under-200ms); ffprobe=0; streams=1
+boundary-exactly-200ms: accepted (valid-and-long-enough); ffprobe=0; streams=1
+ordinary-250ms: accepted (valid-and-long-enough); ffprobe=0; streams=1
+ordinary-1s: accepted (valid-and-long-enough); ffprobe=0; streams=1
+silent-250ms: accepted (valid-and-long-enough); ffprobe=0; streams=1
+odd-junk-before-fmt: accepted (valid-and-long-enough); ffprobe=0; streams=1
+odd-junk-nonzero-pad: accepted (valid-and-long-enough); ffprobe=0; streams=1
+odd-junk-after-data: accepted (valid-and-long-enough); ffprobe=0; streams=1
+multiple-unknown-chunks: accepted (valid-and-long-enough); ffprobe=0; streams=1
+pcm-fmt18-zero-extension: accepted (valid-and-long-enough); ffprobe=0; streams=1
+truncated-data-raw: invalid (riff-length-mismatch); ffprobe=0; streams=1
+truncated-data-repaired-riff: invalid (chunk-overrun); ffprobe=0; streams=1
+truncated-chunk-header: invalid (truncated-chunk-header); ffprobe=1; streams=0
+truncated-riff-header: invalid (truncated-riff-header); ffprobe=1; streams=0
+stale-riff-zero-length: invalid (riff-length-mismatch); ffprobe=0; streams=1
+stale-riff-too-large: invalid (riff-length-mismatch); ffprobe=0; streams=1
+stale-data-too-large: invalid (chunk-overrun); ffprobe=0; streams=1
+stale-data-zero-length: invalid (chunk-overrun); ffprobe=0; streams=1
+odd-data-misaligned-padded: invalid (partial-pcm-frame); ffprobe=0; streams=1
+missing-final-odd-padding: invalid (missing-chunk-padding); ffprobe=0; streams=1
+missing-internal-odd-padding: invalid (chunk-overrun); ffprobe=1; streams=0
+wrong-encoding-float: invalid (unexpected-pcm-format); ffprobe=0; streams=1
+wrong-channels-stereo: invalid (unexpected-pcm-format); ffprobe=0; streams=1
+wrong-rate-48000: invalid (unexpected-pcm-format); ffprobe=0; streams=1
+wrong-bits-8: invalid (unexpected-pcm-format); ffprobe=0; streams=1
+wrong-block-align: invalid (inconsistent-pcm-rates); ffprobe=0; streams=1
+wrong-byte-rate: invalid (inconsistent-pcm-rates); ffprobe=0; streams=1
+zero-rate: invalid (unexpected-pcm-format); ffprobe=1; streams=0
+zero-channels: invalid (unexpected-pcm-format); ffprobe=1; streams=0
+zero-align: invalid (inconsistent-pcm-rates); ffprobe=0; streams=1
+fmt-extension-nonzero: invalid (unsupported-fmt-layout); ffprobe=0; streams=1
+missing-fmt: invalid (require-exactly-one-fmt-and-data); ffprobe=1; streams=0
+missing-data: invalid (require-exactly-one-fmt-and-data); ffprobe=1; streams=0
+duplicate-fmt: invalid (require-exactly-one-fmt-and-data); ffprobe=0; streams=1
+duplicate-data: invalid (require-exactly-one-fmt-and-data); ffprobe=0; streams=1
+short-fmt: invalid (unsupported-fmt-layout); ffprobe=1; streams=0
+not-wave: invalid (not-riff-wave); ffprobe=1; streams=0
+big-endian-rifx: invalid (not-riff-wave); ffprobe=1; streams=0
+arbitrary-garbage: invalid (not-riff-wave); ffprobe=1; streams=0
+max-chunk-length: invalid (chunk-overrun); ffprobe=0; streams=1
+trailing-undeclared-bytes: invalid (riff-length-mismatch); ffprobe=0; streams=1
+riff-consistent-trailing-fragment: invalid (truncated-chunk-header); ffprobe=0; streams=1
+empty-riff-wave: invalid (require-exactly-one-fmt-and-data); ffprobe=1; streams=0

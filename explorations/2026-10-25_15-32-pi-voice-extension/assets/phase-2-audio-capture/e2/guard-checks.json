@@ -1,0 +1,20 @@
+{
+  "scope": "refusal branches only; no service inspection or audio access",
+  "checks": [
+    {
+      "case": "noninteractive-refusal",
+      "passed": true,
+      "stderr": "STOP: Run interactively in a separate Herdr terminal pane; no recording started."
+    },
+    {
+      "case": "standalone-worker-refusal",
+      "passed": true,
+      "stderr": "STOP: Only no-argument interactive run or --self-test is a public command."
+    },
+    {
+      "case": "missing-grant-refusal",
+      "passed": true,
+      "stderr": "STOP: Real worker requires a private parent grant pipe."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "node": "v24.16.0",
+  "platform": "linux",
+  "coreActionCount": 90,
+  "userKeybindingsFileExists": false,
+  "candidates": [
+    {
+      "candidate": "ctrl+r",
+      "piActions": [
+        "app.session.rename"
+      ],
+      "weztermAssignments": [
+        {
+          "chord": "ctrl+r",
+          "table": "search_mode",
+          "line": 215,
+          "action": "act.CopyMode 'CycleMatchType'"
+        }
+      ]
+    },
+    {
+      "candidate": "ctrl+t",
+      "piActions": [
+        "app.thinking.toggle",
+        "app.tree.filter.noTools"
+      ],
+      "weztermAssignments": []
+    },
+    {
+      "candidate": "ctrl+shift+t",
+      "piActions": [],
+      "weztermAssignments": [
+        {
+          "chord": "ctrl+shift+t",
+          "table": "keys",
+          "line": 77,
+          "action": "act.SpawnTab 'CurrentPaneDomain'"
+        },
+        {
+          "chord": "ctrl+shift+t",
+          "table": "keys",
+          "line": 78,
+          "action": "act.SpawnTab 'CurrentPaneDomain'"
+        },
+        {
+          "chord": "ctrl+shift+t",
+          "table": "keys",
+          "line": 109,
+          "action": "act.SpawnTab 'CurrentPaneDomain'"
+        }
+      ]
+    },
+    {
+      "candidate": "ctrl+q",
+      "piActions": [],
+      "weztermAssignments": []
+    },
+    {
+      "candidate": "ctrl+alt+r",
+      "piActions": [],
+      "weztermAssignments": []
+    },
+    {
+      "candidate": "ctrl+shift+y",
+      "piActions": [],
+      "weztermAssignments": []
+    }
+  ],
+  "ctrlQParser": {
+    "legacy": true,
+    "kitty": [
+      {
+        "type": 1,
+        "matches": true,
+        "repeat": false,
+        "release": false
+      },
+      {
+        "type": 2,
+        "matches": true,
+        "repeat": true,
+        "release": false
+      },
+      {
+        "type": 3,
+        "matches": true,
+        "repeat": false,
+        "release": true
+      }
+    ]
+  },
+  "limits": "Core resolved bindings and saved WezTerm tables only; extension review recorded separately. Synthetic parsing is not physical-key delivery validation."
+}

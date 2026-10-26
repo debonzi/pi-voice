@@ -1,0 +1,6 @@
+PASS: real isolated offline Pi loaded the explicit E5 diagnostic and idle widget
+PASS: ordinary input was handled without cloud prompt submission
+PASS: actual Pi command handler refuses viewing before any capture
+PASS: no real worker run or microphone-budget reservation created
+PASS: /quit exited the owned diagnostic Pi cleanly
+Limit: no Ctrl+Q, microphone, live source query, inference or physical Herdr input test

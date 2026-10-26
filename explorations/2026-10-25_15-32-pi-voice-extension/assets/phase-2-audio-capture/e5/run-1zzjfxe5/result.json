@@ -1,0 +1,166 @@
+{
+  "simulation": false,
+  "target": "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source",
+  "events": [
+    {
+      "event": "state",
+      "elapsed_s": 0.000232,
+      "state": "preflight"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.036015,
+      "state": "starting"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 0.050105,
+      "state": "recording"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 13.325805,
+      "state": "stopping"
+    },
+    {
+      "event": "termination-request",
+      "elapsed_s": 13.325877,
+      "phase": "capture",
+      "cancel": false,
+      "stop": true,
+      "failed": false
+    },
+    {
+      "event": "state",
+      "elapsed_s": 13.328557,
+      "state": "transcribing"
+    },
+    {
+      "event": "state",
+      "elapsed_s": 27.112205,
+      "state": "cleaning"
+    }
+  ],
+  "children": [
+    {
+      "phase": "preflight",
+      "pid": 1415199,
+      "argv": [
+        "wpctl",
+        "inspect",
+        "@DEFAULT_AUDIO_SOURCE@"
+      ],
+      "signals": [],
+      "reaped": true,
+      "returncode": 0,
+      "lifetime_s": 0.006386
+    },
+    {
+      "phase": "preflight",
+      "pid": 1415203,
+      "argv": [
+        "wpctl",
+        "get-volume",
+        "@DEFAULT_AUDIO_SOURCE@"
+      ],
+      "signals": [],
+      "reaped": true,
+      "returncode": 0,
+      "lifetime_s": 0.028013
+    },
+    {
+      "phase": "capture",
+      "pid": 1415207,
+      "argv": [
+        "/usr/bin/stdbuf",
+        "-oL",
+        "/usr/bin/pw-record",
+        "--verbose",
+        "--rate",
+        "16000",
+        "--channels",
+        "1",
+        "--format",
+        "s16",
+        "--target",
+        "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source",
+        "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/run-1zzjfxe5/capture.wav"
+      ],
+      "signals": [
+        "SIGINT"
+      ],
+      "reaped": true,
+      "stream_active_s": 0.01332,
+      "owned_executable": "/usr/bin/pw-cat",
+      "returncode": 1,
+      "lifetime_s": 13.291642,
+      "diagnostics": {
+        "stdout": "sndfile: opened file \"/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/run-1zzjfxe5/capture.wav\" format 10010002 channels:1 rate:16000\nPCM: fmt:s16 rate:16000 channels:1 width:2\nrate:16000 latency:0 (0.000s)\nconnecting record stream; target=alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source\nstream state changed unconnected -> connecting\nstream param change: Spa:Enum:ParamId:Latency\nstream param change: Spa:Enum:ParamId:Tag\nstream param change: Spa:Enum:ParamId:Props\nstream properties:\n\tapplication.name = \"pw-record\"\n\tnode.name = \"pw-record\"\n\tnode.rate = \"1/16000\"\n\tmedia.type = \"Audio\"\n\tmedia.category = \"Capture\"\n\tmedia.role = \"Music\"\n\tmedia.filename = \"/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/run-1zzjfxe5/capture.wav\"\n\tmedia.name = \"/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/run-1zzjfxe5/capture.wav\"\n\ttarget.object = \"alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source\"\n\tstream.is-live = \"true\"\n\tnode.want-driver = \"true\"\n\tnode.autoconnect = \"true\"\n\tmedia.class = \"Stream/Input/Audio\"\nremote 0 is named \"pipewire-0\"\nstream state changed connecting -> paused\nstream param change: Spa:Enum:ParamId:Props\nstream param change: Spa:Enum:ParamId:Latency\nstream param change: Spa:Enum:ParamId:Latency\nstream param change: Spa:Enum:ParamId:Format\nstream state changed paused -> streaming\nstream set volume to 1.000 - success\nstream node 97\nstream time: now:0 rate:0/0 ticks:0 delay:32 queued:0 buffered:0 buffers:2 avail:0 size:0\nstream time: now:481313412492161 rate:1/48000 ticks:40960 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:340\nstream time: now:481314393819975 rate:1/48000 ticks:88064 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481315396473060 rate:1/48000 ticks:136192 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:340\nstream time: now:481316399156757 rate:1/48000 ticks:184320 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481317401804900 rate:1/48000 ticks:232448 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481318404467384 rate:1/48000 ticks:280576 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:340\nstream time: now:481319407122423 rate:1/48000 ticks:328704 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481320409771351 rate:1/48000 ticks:376832 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481321412466163 rate:1/48000 ticks:424960 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:340\nstream time: now:481322393782005 rate:1/48000 ticks:472064 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481323396454452 rate:1/48000 ticks:520192 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:340\nstream time: now:481324399107486 rate:1/48000 ticks:568320 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\nstream time: now:481325401783829 rate:1/48000 ticks:616448 delay:1056 queued:0 buffered:88 buffers:2 avail:0 size:341\n",
+        "stderr": ""
+      },
+      "stream_active": true
+    },
+    {
+      "phase": "inference",
+      "pid": 1415256,
+      "argv": [
+        "/home/debonzi/.local/bin/whisper-cli",
+        "--model",
+        "/home/debonzi/.local/share/whisper.cpp/models/ggml-large-v3.bin",
+        "--file",
+        "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/run-1zzjfxe5/capture.wav",
+        "--language",
+        "auto",
+        "--threads",
+        "8",
+        "--device",
+        "0",
+        "--no-timestamps"
+      ],
+      "signals": [],
+      "reaped": true,
+      "returncode": 0,
+      "lifetime_s": 13.782518
+    }
+  ],
+  "recording_duration_cap": null,
+  "vad": false,
+  "transcript_persisted": false,
+  "outcome": "transcribed",
+  "audio_deleted": true,
+  "artifacts": {
+    "binary": {
+      "path": "/home/debonzi/.local/bin/whisper-cli",
+      "sha256": "6c2d7b6529155d77338719cdbd66ab287945716a3921a41fdf736af2e34a25c2",
+      "size": 38570904,
+      "mtime_ns": 1792952320895168820
+    },
+    "model": {
+      "path": "/home/debonzi/.local/share/whisper.cpp/models/ggml-large-v3.bin",
+      "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2",
+      "size": 3095033483,
+      "mtime_ns": 1792952321696174209
+    }
+  },
+  "input": {
+    "node_name": "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source",
+    "volume": "Volume: 0.98",
+    "herdr_context_present": true
+  },
+  "wav": {
+    "codec": "pcm_s16le",
+    "sample_rate": 16000,
+    "channels": 1,
+    "frames": 210232,
+    "duration_s": 13.1395,
+    "bytes": 420508,
+    "data_offset": 44,
+    "mode": "0o600"
+  },
+  "backend": {
+    "vulkan0": true,
+    "encoder_layers": 32,
+    "decoder_layers": 32
+  },
+  "transcript_characters": 165
+}

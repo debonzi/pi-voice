@@ -1,0 +1,73 @@
+{
+  "simulation": true,
+  "target": null,
+  "pid": 1401292,
+  "events": [
+    {
+      "event": "spawned",
+      "elapsed_s": 0.000497,
+      "pid": 1401292
+    },
+    {
+      "event": "stream-active",
+      "elapsed_s": 0.03168
+    },
+    {
+      "event": "stop-requested",
+      "elapsed_s": 0.031967,
+      "intent": "owner-eof-discard"
+    },
+    {
+      "event": "signal",
+      "elapsed_s": 0.032167,
+      "signal": "SIGINT"
+    },
+    {
+      "event": "closed",
+      "elapsed_s": 0.035641,
+      "returncode": 1
+    }
+  ],
+  "diagnostics": {
+    "stdout": "stream state changed unconnected -> connecting\nstream state changed paused -> streaming\n",
+    "stderr": ""
+  },
+  "intent": "owner-eof-discard",
+  "fatal": false,
+  "escalated": false,
+  "stream_active": true,
+  "audio_deleted": true,
+  "child_reaped": true,
+  "argv": [
+    "/home/debonzi/.pyenv/versions/3.13.0/bin/python3",
+    "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e2/capture-trial.py",
+    "--fixture",
+    "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e2/selftest-ob3yeh7m/eof/capture.wav",
+    "normal"
+  ],
+  "owned_executable": "/home/debonzi/.pyenv/versions/3.13.0/bin/python3.13",
+  "returncode": 1,
+  "child_lifetime_s": 0.035634,
+  "wav_mode": "0o600",
+  "wav_size": 16044,
+  "wav": {
+    "verdict": "accepted",
+    "frames": 8000,
+    "duration_seconds": 0.5,
+    "data_offset": 44,
+    "chunks": [
+      {
+        "id_hex": "666d7420",
+        "offset": 12,
+        "size": 16
+      },
+      {
+        "id_hex": "64617461",
+        "offset": 36,
+        "size": 16000
+      }
+    ],
+    "reason": "valid-and-long-enough"
+  },
+  "outcome": "discarded"
+}

@@ -1,0 +1,5 @@
+{
+  "run": "/home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e2/run-nna5cbqo",
+  "max_attempts": 3,
+  "policy": "delete all WAVs; no playback or inference"
+}

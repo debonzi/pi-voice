@@ -1,0 +1,21 @@
+{
+  "scope": "fake children and synthetic WAV only",
+  "cases": [
+    {
+      "case": "stop",
+      "passed": true
+    },
+    {
+      "case": "cancel",
+      "passed": true
+    },
+    {
+      "case": "eof",
+      "passed": true
+    },
+    {
+      "case": "safety",
+      "passed": true
+    }
+  ]
+}

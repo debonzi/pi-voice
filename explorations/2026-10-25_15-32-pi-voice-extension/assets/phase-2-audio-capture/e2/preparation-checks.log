@@ -1,0 +1,3 @@
+Python syntax, whitespace and local Markdown links/fences: PASS
+Private artifact modes; no real run reservation or WAV retained: PASS
+Synthetic-only cases 4/4; refusal checks 3/3: PASS

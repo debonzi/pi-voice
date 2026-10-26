@@ -1,0 +1,51 @@
+{
+  "scope": "Metadata/verdict/cleanup review only; no audio opened or new capture/service query/inference",
+  "accepted": true,
+  "verdict_recorded_at": "2026-10-26T19:55:25.485Z",
+  "authorization": "E5 one attempt consumed; no repeat authorized",
+  "pcm_duration_s": 13.1395,
+  "capture_process_lifetime_s": 13.291642,
+  "batch_asr_process_lifetime_s": 13.782518,
+  "stop_to_cleaning_state_s": 13.7864,
+  "stream_active_to_stop_minus_pcm_ms": 136.2,
+  "backend": {
+    "vulkan0": true,
+    "encoder_layers": 32,
+    "decoder_layers": 32
+  },
+  "children": [
+    {
+      "phase": "preflight",
+      "pid": 1415199,
+      "reaped_reported": true,
+      "pid_absent_at_review": true
+    },
+    {
+      "phase": "preflight",
+      "pid": 1415203,
+      "reaped_reported": true,
+      "pid_absent_at_review": true
+    },
+    {
+      "phase": "capture",
+      "pid": 1415207,
+      "reaped_reported": true,
+      "pid_absent_at_review": true
+    },
+    {
+      "phase": "inference",
+      "pid": 1415256,
+      "reaped_reported": true,
+      "pid_absent_at_review": true
+    }
+  ],
+  "wav_absent": true,
+  "transcript_file_absent": true,
+  "content_privacy": "No transcript or raw ASR diagnostics read or copied; result reports transcript_persisted=false",
+  "hashes": {
+    "result.json": "c01923f7a9da0957174075348dc3f5514fd2aab9fcbb5d7d40cef857dea63379",
+    "verdict.json": "155b297939b2581647f8c02e9d4ecd62a4fdd6f08f9580e873d56c7ae710f712"
+  },
+  "conclusion": "E5 satisfies requester-selected acceptance; phase-2 basic capture feasibility can close without E3/E4",
+  "limits": "Single trial, not a latency/accuracy benchmark or sample-exact acoustic proof; production failure/lifecycle cases deferred"
+}

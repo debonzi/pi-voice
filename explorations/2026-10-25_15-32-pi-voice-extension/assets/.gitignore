@@ -1,0 +1,13 @@
+# Local disposable state for the explicitly launched keyboard diagnostic.
+ctrl-q-runtime/
+
+# Private disposable Pi profiles and driver/temp caches are not evidence.
+# Keep them locally; never commit credentials/settings/cache artifacts.
+phase-2-audio-capture/**/runtime/
+phase-2-audio-capture/**/cache/
+phase-2-audio-capture/**/tmp/
+
+# Never version microphone audio. This exact directory contains only the
+# reproducible E1 synthetic fixtures, verified against their evidence hashes.
+phase-2-audio-capture/**/*.wav
+!phase-2-audio-capture/e1/formats/run-y6vya749/*.wav

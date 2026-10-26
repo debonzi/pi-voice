@@ -1,0 +1,15 @@
+Node: v24.16.0
+Pi TUI under test: /home/debonzi/.pi/agent/install/releases/1.4.0/node_modules/@earendil-works/pi-tui
+PASS 1: Kitty Ctrl+Shift+R identity matches press, repeat, and release
+PASS 2: repeat/release helpers distinguish event types separately from identity
+PASS 3: legacy Ctrl+R has no Shift identity or release information
+PASS 4: modifyOtherKeys distinguishes Ctrl+Shift+R but reports no release
+PASS 5: R release after modifier changes no longer matches the activation chord
+PASS 6: bracketed paste is not classified as repeat/release
+PASS 7: stdin buffer reconstructs split sequences and separates batched events
+PASS 8: raw listener sees releases before default focused-component filtering
+PASS 9: a component can opt in to releases
+PASS 10: raw listener can consume owned input without delivering it to editor
+PASS 11: Kitty negotiation parser retains flags, not just protocol presence
+Result: 11/11 assertion groups passed.
+Limit: synthetic events and dispatch harness only; no actual terminal validation.

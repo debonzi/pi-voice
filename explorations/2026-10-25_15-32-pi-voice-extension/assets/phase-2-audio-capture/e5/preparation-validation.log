@@ -1,0 +1,6 @@
+PASS: Python/Bash syntax; documentation links/fences/whitespace.
+PASS: 103 existing E5 files at 0600, 117 directories at 0700; no symlinks.
+PASS: 38 fake-only result records, 49 recorded synthetic child PIDs absent.
+PASS: final 32/32 synthetic scenarios; real Pi keyboard-only smoke passed (see logs).
+PASS: no E5 real reservation or run directory; no retained WAV; E2 ledger untouched.
+No E5 microphone, live audio query, real inference, playback, installation, upload or global configuration change performed.

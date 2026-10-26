@@ -1,0 +1,21 @@
+Synthetic worker evidence: /home/debonzi/devel/repos/debonzi/pi-voice/explorations/2026-10-25_15-32-pi-voice-extension/assets/phase-2-audio-capture/e5/selftest-suite-j7yt4yh2
+test_active_recording_survives_prior_five_second_cap (__main__.WorkerChecks.test_active_recording_survives_prior_five_second_cap) ... ok
+test_cancel_during_batch_asr_reaps_both_and_suppresses_text (__main__.WorkerChecks.test_cancel_during_batch_asr_reaps_both_and_suppresses_text) ... ok
+test_cancel_while_recording_does_not_start_asr (__main__.WorkerChecks.test_cancel_while_recording_does_not_start_asr) ... ok
+test_no_gpu_is_error_without_cpu_or_model_retry (__main__.WorkerChecks.test_no_gpu_is_error_without_cpu_or_model_retry) ... ok
+test_normal_integrated_fake_capture_validation_asr_and_no_text_persistence (__main__.WorkerChecks.test_normal_integrated_fake_capture_validation_asr_and_no_text_persistence) ... ok
+test_one_shot_ledger_refuses_another_attempt (__main__.WorkerChecks.test_one_shot_ledger_refuses_another_attempt) ... ok
+test_owner_eof_discards_recording (__main__.WorkerChecks.test_owner_eof_discards_recording) ... ok
+test_owner_eof_during_asr_discards (__main__.WorkerChecks.test_owner_eof_during_asr_discards) ... ok
+test_regular_file_stdin_cannot_start_real_worker (__main__.WorkerChecks.test_regular_file_stdin_cannot_start_real_worker) ... ok
+test_release_queued_before_worker_start_opens_no_recorder (__main__.WorkerChecks.test_release_queued_before_worker_start_opens_no_recorder) ... ok
+test_seek_validator_rejects_truncated_file (__main__.WorkerChecks.test_seek_validator_rejects_truncated_file) ... ok
+test_seek_validator_supports_long_sparse_wav_without_reading_pcm (__main__.WorkerChecks.test_seek_validator_supports_long_sparse_wav_without_reading_pcm) ... ok
+test_unlink_error_stays_error_even_when_cancelled (__main__.WorkerChecks.test_unlink_error_stays_error_even_when_cancelled) ... ok
+test_unresponsive_fake_escalates_and_deletes_partial_file (__main__.WorkerChecks.test_unresponsive_fake_escalates_and_deletes_partial_file) ... ok
+test_worker_sigterm_cancels_and_waits_for_owned_recorder (__main__.WorkerChecks.test_worker_sigterm_cancels_and_waits_for_owned_recorder) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 9.614s
+
+OK

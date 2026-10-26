@@ -1,0 +1,4 @@
+{"sequence":"\"\\u001b[113;5u\"","count":55,"key":"ctrl+q","release":false,"repeat":false}
+{"sequence":"\"\\u001b[113;5:3u\"","count":1,"key":"ctrl+q","release":true,"repeat":false}
+PASS: user-executed Herdr 0.9.5 report includes Ctrl+Q release; installed Pi key parser recognizes the recorded press and release sequences.
+Limit: terminal delivery plus independent parsing, not yet a physical Pi-extension listener test in this updated Herdr.

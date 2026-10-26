@@ -1,0 +1,14 @@
+{
+  "binary": {
+    "path": "/home/debonzi/.local/bin/whisper-cli",
+    "sha256": "6c2d7b6529155d77338719cdbd66ab287945716a3921a41fdf736af2e34a25c2",
+    "size": 38570904,
+    "mtime_ns": 1792952320895168820
+  },
+  "model": {
+    "path": "/home/debonzi/.local/share/whisper.cpp/models/ggml-large-v3.bin",
+    "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2",
+    "size": 3095033483,
+    "mtime_ns": 1792952321696174209
+  }
+}

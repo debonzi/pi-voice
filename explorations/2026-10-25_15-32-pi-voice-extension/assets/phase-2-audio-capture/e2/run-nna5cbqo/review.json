@@ -1,0 +1,52 @@
+{
+  "scope": "Metadata/diagnostic review only; no audio opened, device query, capture, playback or inference",
+  "checks": "PASS: three authorized attempts, expected intents/outcomes, SIGINT only, positive validated PCM frames, normal-result probe metadata, no WAVs or recorded PIDs, private modes",
+  "authorization_budget": "3/3 consumed; no repeat/extra capture authorized",
+  "sum_process_lifetime_s": 5.929656,
+  "rows": [
+    {
+      "trial": 1,
+      "intent": "stop",
+      "outcome": "completed-then-deleted",
+      "process_lifetime_s": 1.811732,
+      "stream_active_observed_ms": 16.29,
+      "stop_to_close_ms": 3.162,
+      "sigint_to_close_ms": 3.053,
+      "frames": 26595,
+      "pcm_duration_s": 1.6621875,
+      "stream_active_to_stop_minus_pcm_ms": 130.0995,
+      "recorded_pid_absent_at_review": true,
+      "result_sha256": "669c63a83906fb0f257fd8a7b0de1d70bbb8d707282026743061799d53ccbe3a"
+    },
+    {
+      "trial": 2,
+      "intent": "cancel-discard",
+      "outcome": "discarded",
+      "process_lifetime_s": 2.268235,
+      "stream_active_observed_ms": 14.891,
+      "stop_to_close_ms": 2.665,
+      "sigint_to_close_ms": 2.556,
+      "frames": 36152,
+      "pcm_duration_s": 2.2595,
+      "stream_active_to_stop_minus_pcm_ms": -8.813,
+      "recorded_pid_absent_at_review": true,
+      "result_sha256": "571d56468592f5c37e69c4ede291d918289412525af95247a20e565e7db9cd57"
+    },
+    {
+      "trial": 3,
+      "intent": "stop",
+      "outcome": "completed-then-deleted",
+      "process_lifetime_s": 1.849689,
+      "stream_active_observed_ms": 13.501,
+      "stop_to_close_ms": 2.473,
+      "sigint_to_close_ms": 2.362,
+      "frames": 29326,
+      "pcm_duration_s": 1.832875,
+      "stream_active_to_stop_minus_pcm_ms": 0.849,
+      "recorded_pid_absent_at_review": true,
+      "result_sha256": "55724e587ee40a71d9470d8dde16061c1d763b98ef628e1993f28f2ac4f5e4ea"
+    }
+  ],
+  "timing_limits": "stream-active is text receipt, not first PCM; close includes wait/pipe drain, not sample-exact device shutdown; three observations only",
+  "duration_discrepancy": "Trial 1 PCM is about 130 ms shorter than stream-active-to-stop. This does not locate loss or prove clipped speech. No playback/first-sample timestamps/acoustic reference."
+}
