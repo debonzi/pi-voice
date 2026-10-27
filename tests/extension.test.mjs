@@ -14,7 +14,7 @@ function fixture(options = {}) {
   const handlers = new Map(), commands = new Map(), listeners = new Set();
   const notices = [], workers = [], submits = [], statuses = new Map();
   let widget, idle = true, queued = false, active = true, overlay = false, focus;
-  let sessionId = 'synthetic-session', leafId = 'synthetic-leaf', factory;
+  let sessionId = 'synthetic-session', leafId = 'synthetic-leaf', factory, renderRequests = 0;
   const makeEditor = () => new CustomEditor({ requestRender() {} }, theme, kb);
   const owner = { editor: makeEditor(), ui: { requestRender() {} },
     footerDataProvider: { setExtensionStatus() {} },
@@ -33,7 +33,7 @@ function fixture(options = {}) {
       setWidget(_key, value) {
         widget = typeof value === 'function' ? value({
           getFocusedComponent: () => focus, hasOverlay: () => overlay,
-          requestRender() {}, terminal: { rows: 30 },
+          requestRender() { renderRequests++; }, terminal: { rows: 30 },
         }, { fg: (_key, text) => text }) : value;
       },
     },
@@ -63,6 +63,7 @@ function fixture(options = {}) {
     },
   });
   const f = { ctx, handlers, commands, workers, submits, notices, statuses, listeners,
+    get renderRequests() { return renderRequests; },
     get editor() { return owner.editor; },
     get text() { return nativeUI.getEditorText(); },
     get label() { return widget?.render(2000).join('\n') || ''; },
@@ -102,6 +103,28 @@ test('factory and startup never access microphone/config; TUI is opt-in', async 
   await f.shutdown(); assert.equal(f.listeners.size, 0); assert.equal(f.label, '');
   await f.start('rpc'); assert.equal(f.listeners.size, 0);
   await f.command('start'); assert.equal(f.workers.length, 0);
+});
+
+test('widget requests redraws directly without publishing footer status', async () => {
+  const f = fixture(); await f.start();
+  assert.ok(f.renderRequests > 0);
+  const redraw = async (action) => {
+    const before = f.renderRequests;
+    await action();
+    assert.ok(f.renderRequests > before);
+    assert.equal(f.statuses.size, 0);
+  };
+  await redraw(() => f.command('start'));
+  await redraw(() => f.workers[0].callbacks.state('recording', 'Synthetic microphone'));
+  assert.match(f.label, /recording 0s.*Synthetic microphone/);
+  await redraw(() => f.command('stop'));
+  await redraw(() => f.workers[0].callbacks.state('transcribing'));
+  await redraw(() => finish(f));
+  assert.match(f.label, /Voice: idle.*Dictation inserted/);
+  await redraw(() => f.command('status'));
+  await f.shutdown();
+  assert.equal(f.label, '');
+  assert.equal(f.statuses.size, 0);
 });
 
 test('hold starts once for ordinary and Kitty repeats; modifier-loss Q release stops once', async () => {
@@ -211,6 +234,40 @@ test('backslash Enter newline does not cancel a dictation', async () => {
   const f = fixture(); await f.start(); f.setText('typed\\'); await f.command('start');
   await f.dispatch('\r'); await finish(f, 'dictated');
   assert.equal(f.text, 'typed\ndictated'); assert.equal(f.workers[0].cancels, 0); await f.shutdown();
+});
+
+test('cancellation without dictation preserves status and does not report a discard', async () => {
+  for (const outcome of [undefined, 'completed', 'error', 'blocked']) {
+    const f = fixture(); await f.start();
+    if (outcome) {
+      await f.command('start');
+      await finish(f, outcome === 'completed' ? 'ditado' : '', {
+        outcome: outcome === 'blocked' ? 'error' : outcome,
+        cleanupOk: outcome !== 'blocked',
+      });
+    }
+    const label = f.label, renderRequests = f.renderRequests;
+    f.setText('manual'); await f.dispatch('\r');
+    assert.equal(f.submits.at(-1), 'manual');
+    for (const name of ['input', 'user_bash', 'before_agent_start', 'session_before_switch',
+      'session_before_fork', 'session_before_tree', 'session_tree', 'session_before_compact']) {
+      await f.event(name);
+      assert.equal(f.label, label);
+      assert.equal(f.renderRequests, renderRequests);
+    }
+    await f.command('cancel'); assert.equal(f.label, label);
+    await f.shutdown();
+  }
+});
+
+test('input/bash/agent discard an actual pending transcription', async () => {
+  for (const name of ['input', 'user_bash', 'before_agent_start']) {
+    const f = fixture(); await f.start(); await f.command('start'); f.replaceEditor();
+    await finish(f, 'never'); assert.match(f.label, /Voice: pending/);
+    await f.event(name); assert.match(f.label, /Voice: idle.*pending dictation discarded/);
+    await f.command('accept'); assert.equal(f.text, '');
+    await f.shutdown();
+  }
 });
 
 test('input/bash/agent and session/branch navigation invalidate before any await', async () => {

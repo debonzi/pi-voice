@@ -66,7 +66,7 @@ export function installVoice(pi: ExtensionAPI, overrides: Partial<Dependencies> 
     if (live(s) && !s.shutting) s.ctx.ui.notify(message, kind);
   };
   function render(s: Session) {
-    if (live(s)) s.ctx.ui.setStatus(KEY, `Voice: ${s.state}`); // Also requests an async repaint.
+    if (live(s)) s.tui?.requestRender();
   }
   function clearTimer(s: Session) {
     if (s.timer) clearInterval(s.timer);
@@ -109,6 +109,7 @@ export function installVoice(pi: ExtensionAPI, overrides: Partial<Dependencies> 
     render(s);
   }
   function cancel(s: Session, reason = "Dictation canceled.") {
+    if (!s.operation && s.pending === undefined) return;
     s.pending = undefined;
     const op = s.operation;
     if (!op || op.canceled) {
@@ -312,7 +313,6 @@ export function installVoice(pi: ExtensionAPI, overrides: Partial<Dependencies> 
     s.pending = undefined;
     s.active = false;
     s.ctx.ui.setWidget(KEY, undefined);
-    s.ctx.ui.setStatus(KEY, undefined);
     if (current === s) current = undefined;
   }
   pi.on("session_start", async (_event, ctx) => {
